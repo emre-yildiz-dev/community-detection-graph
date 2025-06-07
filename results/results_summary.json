@@ -1,9 +1,9 @@
 {
   "evaluation_metrics": {
     "Louvain": {
-      "adjusted_rand_index": 0.2364234369613866,
-      "normalized_mutual_info": 0.45369947774413966,
-      "num_predicted_communities": 105,
+      "adjusted_rand_index": 0.25849053506793657,
+      "normalized_mutual_info": 0.45070646297939765,
+      "num_predicted_communities": 103,
       "num_true_communities": 7
     },
     "Label_Propagation": {
@@ -13,38 +13,38 @@
       "num_true_communities": 7
     },
     "gcn_unsupervised": {
-      "adjusted_rand_index": 0.07132713838300492,
-      "normalized_mutual_info": 0.3524800173257296,
-      "num_predicted_communities": 105,
+      "adjusted_rand_index": 0.07957314736530231,
+      "normalized_mutual_info": 0.3636394686103506,
+      "num_predicted_communities": 103,
       "num_true_communities": 7
     },
     "gcn_semi_supervised": {
-      "adjusted_rand_index": 0.8607854343749248,
-      "normalized_mutual_info": 0.8211683072391526,
+      "adjusted_rand_index": 0.8535432411095855,
+      "normalized_mutual_info": 0.8123350498352049,
       "num_predicted_communities": 7,
       "num_true_communities": 7
     },
     "sage_unsupervised": {
-      "adjusted_rand_index": 0.06899844193035479,
-      "normalized_mutual_info": 0.3514655182231176,
-      "num_predicted_communities": 105,
+      "adjusted_rand_index": 0.0732085501114311,
+      "normalized_mutual_info": 0.36612983466315874,
+      "num_predicted_communities": 103,
       "num_true_communities": 7
     },
     "sage_semi_supervised": {
-      "adjusted_rand_index": 0.8503614288433582,
-      "normalized_mutual_info": 0.811611217052007,
+      "adjusted_rand_index": 0.8516420601018895,
+      "normalized_mutual_info": 0.8124665779953778,
       "num_predicted_communities": 7,
       "num_true_communities": 7
     },
     "gat_unsupervised": {
-      "adjusted_rand_index": 0.0702452011006533,
-      "normalized_mutual_info": 0.3757892041937399,
-      "num_predicted_communities": 105,
+      "adjusted_rand_index": 0.0790854154770967,
+      "normalized_mutual_info": 0.38568983193224093,
+      "num_predicted_communities": 103,
       "num_true_communities": 7
     },
     "gat_semi_supervised": {
-      "adjusted_rand_index": 0.8751358305170397,
-      "normalized_mutual_info": 0.8366972219528747,
+      "adjusted_rand_index": 0.8796940097864493,
+      "normalized_mutual_info": 0.8398603368921705,
       "num_predicted_communities": 7,
       "num_true_communities": 7
     }
@@ -57,7 +57,7 @@
       "lpa_community",
       "gnn_community"
     ],
-    "louvain_community_count": 105,
+    "louvain_community_count": 103,
     "lpa_community_count": 224,
     "gnn_community_count": 7
   }

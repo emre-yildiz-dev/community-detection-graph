@@ -79,12 +79,17 @@ class Neo4jManager:
     def run_louvain_algorithm(self) -> None:
         """Run Louvain community detection algorithm using GDS."""
         with self.driver.session() as session:
-            # Drop existing graph projection if it exists
+            # Check if graph projection exists and drop it if it does
             try:
-                session.run("CALL gds.graph.drop('cora-graph') YIELD graphName")
-                logger.info("Dropped existing cora-graph projection")
-            except Exception:
-                logger.info("No existing cora-graph projection to drop")
+                result = session.run("CALL gds.graph.exists('cora-graph') YIELD exists")
+                exists = result.single()['exists']
+                if exists:
+                    session.run("CALL gds.graph.drop('cora-graph') YIELD graphName")
+                    logger.info("Dropped existing cora-graph projection")
+                else:
+                    logger.info("No existing cora-graph projection to drop")
+            except Exception as e:
+                logger.info(f"Could not check/drop graph projection: {e}")
             
             # Create graph projection
             session.run("""
