@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  19 JUN 2025 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  19 JUN 2025 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,8 +718,7 @@ sty))
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count345
 \l__pdf_internal_box=\box77
-)
-No file sunum.aux.
+) (docs/sunum.aux)
 \openout1 = `sunum.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -740,6 +739,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -797,6 +797,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 13.
+
+(docs/sunum.out) (docs/sunum.out)
 \@outlinefile=\write5
 \openout5 = `sunum.out'.
 
@@ -876,9 +878,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/local/texlive/2025/texmf-dist/tex/latex/translator/translator-theorem-dic
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-)
-No file sunum.nav.
-
+) (docs/sunum.nav)
 Overfull \hbox (51.88048pt too wide) in paragraph at lines 13--13
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -961,12 +961,12 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 [3
 
 ]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 50--50
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 54--54
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 50--50
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 54--54
  [][][][]  
  []
 
@@ -985,13 +985,22 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 63--63
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 74--74
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 63--63
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 74--74
  [][][][]  
+ []
+
+<images/louvain.jpg, id=149, 1284.8pt x 588.1975pt>
+File: images/louvain.jpg Graphic file (type jpg)
+<use images/louvain.jpg>
+Package pdftex.def Info: images/louvain.jpg  used on input line 74.
+(pdftex.def)             Requested size: 171.14764pt x 78.35313pt.
+
+Overfull \vbox (97.46706pt too high) detected at line 74
  []
 
 
@@ -1008,21 +1017,25 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 
 [5
 
-]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 70--70
+ <docs/images/louvain.jpg>]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 95--95
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 70--70
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 95--95
  [][][][]  
  []
 
-<../results/dataset_stats.png, id=232, 1018.0434pt x 426.393pt>
-File: ../results/dataset_stats.png Graphic file (type png)
-<use ../results/dataset_stats.png>
-Package pdftex.def Info: ../results/dataset_stats.png  used on input line 70.
-(pdftex.def)             Requested size: 342.2953pt x 143.36465pt.
+<images/lpa_diagram.jpg, id=177, 1284.8pt x 534.99875pt>
+File: images/lpa_diagram.jpg Graphic file (type jpg)
+<use images/lpa_diagram.jpg>
+Package pdftex.def Info: images/lpa_diagram.jpg  used on input line 95.
+(pdftex.def)             Requested size: 171.14764pt x 71.26659pt.
+
+Overfull \vbox (34.59619pt too high) detected at line 95
+ []
+
 
 
 
@@ -1037,24 +1050,23 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 
 [6
 
- <docs/../results/dataset_stats.png>]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 77--77
+ <docs/images/lpa_diagram.jpg>]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 116--116
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 77--77
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 116--116
  [][][][]  
  []
 
-<../results/community_comparison.png, id=262, 1149.093pt x 860.013pt>
-File: ../results/community_comparison.png Graphic file (type png)
-<use ../results/community_comparison.png>
-Package pdftex.def Info: ../results/community_comparison.png  used on input lin
-e 77.
-(pdftex.def)             Requested size: 342.2953pt x 256.18182pt.
+<images/gcn_diagram.jpg, id=205, 1284.8pt x 757.83125pt>
+File: images/gcn_diagram.jpg Graphic file (type jpg)
+<use images/gcn_diagram.jpg>
+Package pdftex.def Info: images/gcn_diagram.jpg  used on input line 116.
+(pdftex.def)             Requested size: 171.14764pt x 100.94986pt.
 
-Overfull \vbox (74.8126pt too high) detected at line 77
+Overfull \vbox (61.7962pt too high) detected at line 116
  []
 
 
@@ -1071,22 +1083,86 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 
 [7
 
- <docs/../results/community_comparison.png>]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 84--84
+ <docs/images/gcn_diagram.jpg>]
+! Argument of \frame has an extra }.
+<inserted text> 
+                \par 
+l.155         </column}
+                       
+? 
+Runaway argument?
+ \begin {column}{.5\textwidth } \begin {figure} \includegraphics [wid\ETC.
+! Paragraph ended before \frame was complete.
+<to be read again> 
+                   \par 
+l.155         </column}
+                       
+? 
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.155         </column}
+                       
+? 
+! Undefined control sequence.
+\endcolumns ->\beamer@colclose 
+                               \def \beamer@colclose {}\beamer@colexitcode \...
+l.156     \end{columns}
+                       
+? 
+! Undefined control sequence.
+\endcolumns ...mer@colclose {}\beamer@colexitcode 
+                                                  \end {actionenv}
+l.156     \end{columns}
+                       
+? 
+! Undefined control sequence.
+\endactionenv ->\beamer@todoend 
+                                
+l.156     \end{columns}
+                       
+? 
+
+! LaTeX Error: \begin{frame} on input line 118 ended by \end{actionenv}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \end{columns}
+                       
+? 
+
+! LaTeX Error: \begin{frame} on input line 118 ended by \end{columns}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \end{columns}
+                       
+? 
+! Too many }'s.
+\endframe ->\egroup 
+                    \begingroup \def \@currenvir {frame}
+l.157 \end{frame}
+                 
+? 
+
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 164--164
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 84--84
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 164--164
  [][][][]  
  []
 
-<../results/evaluation_metrics.png, id=293, 996.6033pt x 426.1521pt>
-File: ../results/evaluation_metrics.png Graphic file (type png)
-<use ../results/evaluation_metrics.png>
-Package pdftex.def Info: ../results/evaluation_metrics.png  used on input line 
-84.
-(pdftex.def)             Requested size: 342.2953pt x 146.36586pt.
+<../results/dataset_stats.png, id=234, 1018.0434pt x 426.393pt>
+File: ../results/dataset_stats.png Graphic file (type png)
+<use ../results/dataset_stats.png>
+Package pdftex.def Info: ../results/dataset_stats.png  used on input line 164.
+(pdftex.def)             Requested size: 342.2953pt x 143.36465pt.
 
 
 
@@ -1101,23 +1177,24 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 
 [8
 
- <docs/../results/evaluation_metrics.png>]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 91--91
+ <docs/../results/dataset_stats.png>]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 171--171
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 91--91
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 171--171
  [][][][]  
  []
 
-<../results/Figure_1.png, id=322, 1248.8256pt x 733.5405pt>
-File: ../results/Figure_1.png Graphic file (type png)
-<use ../results/Figure_1.png>
-Package pdftex.def Info: ../results/Figure_1.png  used on input line 91.
-(pdftex.def)             Requested size: 342.2953pt x 201.05827pt.
+<../results/community_comparison.png, id=265, 1149.093pt x 860.013pt>
+File: ../results/community_comparison.png Graphic file (type png)
+<use ../results/community_comparison.png>
+Package pdftex.def Info: ../results/community_comparison.png  used on input lin
+e 171.
+(pdftex.def)             Requested size: 342.2953pt x 256.18182pt.
 
-Overfull \vbox (19.93213pt too high) detected at line 91
+Overfull \vbox (74.8126pt too high) detected at line 171
  []
 
 
@@ -1134,21 +1211,22 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 
 [9
 
- <docs/../results/Figure_1.png>]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 98--98
+ <docs/../results/community_comparison.png>]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 178--178
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 98--98
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 178--178
  [][][][]  
  []
 
-<../results/Figure_2.png, id=351, 1011.78pt x 433.62pt>
-File: ../results/Figure_2.png Graphic file (type png)
-<use ../results/Figure_2.png>
-Package pdftex.def Info: ../results/Figure_2.png  used on input line 98.
-(pdftex.def)             Requested size: 342.2953pt x 146.70103pt.
+<../results/evaluation_metrics.png, id=294, 996.6033pt x 426.1521pt>
+File: ../results/evaluation_metrics.png Graphic file (type png)
+<use ../results/evaluation_metrics.png>
+Package pdftex.def Info: ../results/evaluation_metrics.png  used on input line 
+178.
+(pdftex.def)             Requested size: 342.2953pt x 146.36586pt.
 
 
 
@@ -1163,14 +1241,23 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 
 [10
 
- <docs/../results/Figure_2.png>]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 104--104
+ <docs/../results/evaluation_metrics.png>]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 185--185
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 104--104
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 185--185
  [][][][]  
+ []
+
+<../results/Figure_1.png, id=323, 1248.8256pt x 733.5405pt>
+File: ../results/Figure_1.png Graphic file (type png)
+<use ../results/Figure_1.png>
+Package pdftex.def Info: ../results/Figure_1.png  used on input line 185.
+(pdftex.def)             Requested size: 342.2953pt x 201.05827pt.
+
+Overfull \vbox (19.93213pt too high) detected at line 185
  []
 
 
@@ -1187,6 +1274,59 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 
 [11
 
+ <docs/../results/Figure_1.png>]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 192--192
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 192--192
+ [][][][]  
+ []
+
+<../results/Figure_2.png, id=352, 1011.78pt x 433.62pt>
+File: ../results/Figure_2.png Graphic file (type png)
+<use ../results/Figure_2.png>
+Package pdftex.def Info: ../results/Figure_2.png  used on input line 192.
+(pdftex.def)             Requested size: 342.2953pt x 146.70103pt.
+
+
+
+Overfull \hbox (51.88048pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[12
+
+ <docs/../results/Figure_2.png>]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 198--198
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 198--198
+ [][][][]  
+ []
+
+
+
+
+Overfull \hbox (51.88048pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
 ]
 \tf@nav=\write6
 \openout6 = `sunum.nav'.
@@ -1202,34 +1342,28 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `sunum.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sunum.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `sunum.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21829 strings out of 473190
- 426318 string characters out of 5715800
- 795444 words of memory out of 5000000
- 44632 multiletter control sequences out of 15000+600000
- 562167 words of font info for 47 fonts, out of 8000000 for 9000
+ 21872 strings out of 473190
+ 426311 string characters out of 5715800
+ 793493 words of memory out of 5000000
+ 44662 multiletter control sequences out of 15000+600000
+ 562196 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,123p,412b,887s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,19n,123p,412b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
 sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr
-/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on docs/sunum.pdf (11 pages, 1135643 bytes).
+/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on docs/sunum.pdf (13 pages, 1245782 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 23 named destinations out of 1000 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 446 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

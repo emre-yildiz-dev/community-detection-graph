@@ -35,31 +35,125 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Klasik Algoritmalar}
-    \framesubtitle{Neo4j GDS ile Uygulama}
-    \begin{block}{Louvain Algoritması}
-        Modülerlik skorunu maksimize ederek toplulukları bulmaya çalışan hiyerarşik bir kümeleme algoritmasıdır. İki aşamadan oluşur:
-        \begin{enumerate}
-            \item Her düğüm kendi komşularıyla birleştirilerek modülerlik artışı en üst düzeye çıkarılır.
-            \item Oluşturulan topluluklar tek bir düğüm olarak kabul edilir ve ilk aşama tekrarlanır.
-        \end{enumerate}
-    \end{block}
-    \begin{block}{Label Propagation Algorithm (LPA)}
-        Düğümlerin etiketlerini komşularının en sık rastlanan etiketine göre güncellediği iteratif bir süreçtir. Hızlı ve basittir ancak sonuçları deterministik olmayabilir.
-    \end{block}
+\begin{frame}{Neo4j ve Graph Data Science (GDS) Rolü}
+    \framesubtitle{Projedeki İşlevi ve İş Akışı}
+    \begin{itemize}
+        \item \textbf{Veri Depolama ve Modelleme:} Cora veriseti, Neo4j'de çizge yapısına en uygun şekilde depolanmıştır:
+        \begin{itemize}
+            \item Düğümler: \texttt{:Paper} etiketi ile makaleler.
+            \item İlişkiler: \texttt{[:CITES]} ilişkisi ile makaleler arası alıntılar.
+        \end{itemize}
+        \item \textbf{In-Memory Çizge Projeksiyonu:} Analizden önce, GDS kütüphanesi ile \texttt{'cora-graph'} adında bir "in-memory" yansıtma oluşturulur. Bu, algoritmaların disk I/O olmadan çok yüksek hızda çalışmasını sağlar.
+        \item \textbf{Klasik Algoritmaların Çalıştırılması:}
+        \begin{itemize}
+            \item \texttt{gds.louvain.write(...)} ve \texttt{gds.labelPropagation.write(...)} fonksiyonları ile topluluk tespiti algoritmaları çalıştırılmıştır.
+            \item \texttt{writeProperty} parametresi sayesinde, her bir algoritmanın bulduğu topluluk kimliği (\texttt{louvainCommunityId}, \texttt{lpaCommunityId}) doğrudan ilgili düğümlerin bir özelliği olarak veritabanına geri yazılmıştır.
+        \end{itemize}
+        \item \textbf{Entegrasyon Noktası:} Neo4j, hem klasik algoritmaların analiz merkezi hem de PyTorch ile eğitilen GNN modelleri için bir veri kaynağı görevi görmüştür.
+    \end{itemize}
 \end{frame}
 
-\begin{frame}{Graph Neural Network (GNN) Modelleri}
-    \framesubtitle{PyTorch Geometric ile Uygulama}
-    \begin{block}{Graph Convolutional Network (GCN)}
-        Komşu düğümlerin özelliklerini toplayarak ve bir sinir ağı katmanından geçirerek düğüm temsillerini öğrenir. Spektral çizge teorisine dayanır.
-    \end{block}
-    \begin{block}{GraphSAGE (Sample and Aggregate)}
-        Büyük çizgeler için tasarlanmıştır. Her düğüm için komşuluktan sabit sayıda örneklem alır ve bu örneklemlerin bilgilerini birleştirerek (aggregate) düğüm temsilini günceller.
-    \end{block}
-    \begin{block}{Graph Attention Network (GAT)}
-        Komşu düğümlere farklı ağırlıklar atamak için dikkat (attention) mekanizmalarını kullanır. Bu sayede model, hangi komşuların daha önemli olduğuna karar verebilir.
-    \end{block}
+\begin{frame}{Louvain Algoritması}
+    \begin{columns}[T]
+        \begin{column}{.5\textwidth}
+            \textbf{Çalışma Prensibi:}
+            \begin{itemize}
+                \item Hiyerarşik bir kümeleme algoritmasıdır ve amacı ağdaki modülerlik skorunu maksimize etmektir.
+                \item \textbf{1. Aşama (Modülerlik Optimizasyonu):} Her düğüm, komşu düğümlerin bulunduğu toplulukları tek tek dener. Düğüm, modülerlikte en büyük artışı sağlayan topluluğa taşınır. Bu işlem, hiçbir düğüm hareketi modülerliği artırmayana kadar tekrarlanır.
+                \item \textbf{2. Aşama (Topluluk Birleştirme):} İlk aşamada bulunan topluluklar, tek birer "süper düğüm" olarak kabul edilir ve bu süper düğümler arasında yeni bir ağ oluşturulur.
+                \item Bu iki aşama, ağ yapısında bir değişiklik olmayana kadar tekrarlanır.
+            \end{itemize}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{images/louvain.jpg}
+                \caption{Louvain algoritmasının iki aşamalı yapısı.}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Label Propagation (LPA)}
+    \begin{columns}[T]
+        \begin{column}{.5\textwidth}
+            \textbf{Çalışma Prensibi:}
+            \begin{itemize}
+                \item Yarı denetimli bir algoritmadır ve düğümlerin etiketlerini komşularına yayarak toplulukları bulur.
+                \item \textbf{Başlangıç:} Her düğüme benzersiz bir etiket atanır.
+                \item \textbf{İterasyon:} Her adımda, her düğüm komşularının etiketlerine bakar ve komşuları arasında en sık görülen (majoritary) etiketi kendi etiketi olarak günceller.
+                \item \textbf{Duruş Kriteri:} Bu işlem, hiçbir düğümün etiketini değiştirmediği bir denge durumuna ulaşılana kadar tekrarlanır.
+                \item Sonuç olarak, aynı etikete sahip düğümler bir topluluk oluşturur.
+            \end{itemize}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{images/lpa_diagram.jpg}
+                \caption{Etiketlerin komşular arasında yayılması.}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Graph Convolutional Network (GCN)}
+    \begin{columns}[T]
+        \begin{column}{.5\textwidth}
+            \textbf{Çalışma Prensibi:}
+            \begin{itemize}
+                \item Çizge evrişim (convolution) operatörünü kullanarak düğüm temsillerini (embeddings) öğrenir.
+                \item Her katmanda, bir düğüm kendi komşu düğümlerinin özellik vektörlerini toplar (aggregation) ve ortalamasını alır.
+                \item Bu toplanan bilgi, düğümün kendi özellik vektörü ile birleştirilir.
+                \item Sonuç, bir aktivasyon fonksiyonundan (örneğin ReLU) geçirilerek düğümün yeni katmandaki temsili oluşturulur.
+                \item Bu süreç, katman sayısı kadar tekrarlanarak daha geniş komşuluklardan bilgi toplanması sağlanır.
+            \end{itemize}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{images/gcn_diagram.jpg}
+                \caption{Komşuluk bilgilerinin toplanması ve güncellenmesi.}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{GraphSAGE}
+    \begin{columns}[T]
+        \begin{column}{.5\textwidth}
+            \textbf{Çalışma Prensibi:}
+            \begin{itemize}
+                \item "Sample and Aggregate" (Örnekle ve Birleştir) fikrine dayanır ve büyük çizgeler için tasarlanmıştır.
+                \item \textbf{Örnekleme:} Her düğüm için tüm komşuları kullanmak yerine, sabit sayıda komşu rastgele örneklenir. Bu, hesaplama maliyetini düşürür.
+                \item \textbf{Birleştirme (Aggregation):} Örneklenen komşuların özellik vektörleri bir birleştirme fonksiyonu (örneğin, Mean, Max-Pooling veya LSTM) kullanılarak tek bir vektörde birleştirilir.
+                \item \textbf{Güncelleme:} Bu birleştirilmiş vektör, hedef düğümün kendi mevcut vektörü ile birleştirilerek düğümün yeni temsili oluşturulur.
+            \end{itemize}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{images/graphsage_diagram.jpg}
+                \caption{Komşulardan örnekleme ve bilgiyi birleştirme.}
+            </end{figure}
+        </end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Graph Attention Network (GAT)}
+    \begin{columns}[T]
+        \begin{column}{.5\textwidth}
+            \textbf{Çalışma Prensibi:}
+            \begin{itemize}
+                \item Komşu düğümlerin bilgilerini birleştirirken dikkat (attention) mekanizmasını kullanır.
+                \item GCN ve GraphSAGE'in aksine, her komşuya eşit önem vermek yerine, her komşuya bir "dikkat skoru" (attention score) atar.
+                \item Bu skorlar, hedef düğüm için hangi komşuların daha önemli olduğunu belirtir ve ağırlıklı bir ortalama alınmasını sağlar.
+                \item Bu sayede model, daha ilgili komşulara odaklanarak daha zengin ve anlamlı düğüm temsilleri öğrenebilir.
+                \item Maskelenmiş dikkat (masked attention) sayesinde sadece komşuluk bilgisi kullanılır.
+            \end{itemize}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{images/gat_diagram.jpg}
+                \caption{Komşulara dikkat skorları ile ağırlıklandırma.}
+            </end{figure}
+        </column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Sonuçlar: Veriseti İstatistikleri}
@@ -100,7 +194,7 @@
 \begin{frame}{Teşekkürler}
     \centering
     \Huge
-    Sorularınız için teşekkür ederim.
+    Teşekkürler
 \end{frame}
 
 \end{document}
