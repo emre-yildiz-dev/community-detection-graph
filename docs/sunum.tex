@@ -191,6 +191,57 @@
     \end{figure}
 \end{frame}
 
+\begin{frame}{Proje Hedefleri ve Araştırma Soruları}
+\framesubtitle{Neyi, Neden, Nasıl Sorguladık?}
+    \begin{itemize}
+        \item Klasik topluluk tespit algoritmaları ile modern GNN tabanlı yaklaşımların performansını nicel olarak karşılaştırmak.
+        \item Neo4j GDS üzerinde Louvain ve LPA; PyTorch Geometric ile GCN, GraphSAGE ve GAT modellerini hem denetimsiz hem yarı denetimli senaryolarda incelemek.
+        \item Performansı \( \text{Modülerlik}, \text{ARI}, \text{NMI} \) gibi metriklerle değerlendirmek ve gerçek konu etiketleriyle uyumunu ölçmek.
+        \item Büyük ölçekli graph + GNN entegrasyonu için uçtan uca bir araştırma iş akışı sunmak.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Deneysel Kurulum}
+\framesubtitle{Veri, Parametreler ve Donanım}
+    \begin{itemize}
+        \item \textbf{Veriseti:} Cora Citation Network (2708 düğüm, 5429 kenar, 1433 özellik, 7 sınıf).
+        \item \textbf{GNN Parametreleri:} Gizli boyut $=$ 64, Katman $=$ 2, Öğrenme hızı $=$ 0.01, Epoch $=$ 200.
+        \item \textbf{Klasik Algoritmalar:} GDS varsayılan parametreleri (weightless, resolution $=$ 1.0).
+        \item \textbf{Donanım:} 16\,GB RAM, NVIDIA RTX\,3060 GPU (CUDA\,11.8).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Temel Bulgular}
+\framesubtitle{Özet Değerlendirme Metrikleri}
+    \centering
+    \small
+    \begin{tabular}{lccc}
+        \hline
+        Yöntem & ARI & NMI & Top. Sayısı \\\hline
+        Louvain & 0.26 & 0.45 & 103 \\
+        Label Propagation & 0.15 & 0.38 & 224 \\
+        GCN (Semi) & 0.85 & 0.81 & 7 \\
+        GraphSAGE (Semi) & 0.85 & 0.81 & 7 \\
+        GAT (Semi) & 0.88 & 0.84 & 7 \\
+        \hline
+    \end{tabular}
+
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item Yarı denetimli GNN modelleri, küçük bir etiketli veri kümesiyle dahi klasik yöntemleri geride bırakmıştır.
+        \item Louvain, yüksek modülerlik üretmesine rağmen gerçek konu etiketleriyle orta düzeyde uyumludur.
+        \item LPA çok sayıda topluluk üreterek gürültüye açık bir yapı göstermiştir.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Çıkarımlar ve Gelecek Çalışmalar}
+    \begin{itemize}
+        \item Yarı denetimli GNN'ler, topluluk tespitinde güçlü bir alternatif sunmaktadır.
+        \item Neo4j $+$ PyG entegrasyonu, araştırmacılar için esnek ve ölçeklenebilir bir altyapı sağlar.
+        \item Gelecekte heterojen graph'lar (R-GCN) ve zamansal topluluk tespiti üzerine odaklanılabilir.
+    \end{itemize}
+\end{frame}
+
 \begin{frame}{Teşekkürler}
     \centering
     \Huge

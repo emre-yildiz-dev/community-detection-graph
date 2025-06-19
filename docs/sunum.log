@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  19 JUN 2025 11:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  19 JUN 2025 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,12 +1304,53 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
 [12
 
  <docs/../results/Figure_2.png>]
-Overfull \hbox (51.88048pt too wide) in paragraph at lines 198--198
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 202--202
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (73.94936pt too wide) in paragraph at lines 198--198
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 202--202
+ [][][][]  
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 202
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 202
+.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
+ut line 202.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+
+
+Overfull \hbox (51.88048pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
+]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 212--212
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 212--212
  [][][][]  
  []
 
@@ -1325,7 +1366,79 @@ Overfull \hbox (73.94936pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[13
+[14
+
+]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 235--235
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 235--235
+ [][][][]  
+ []
+
+
+
+
+Overfull \hbox (51.88048pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[15
+
+]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 243--243
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 243--243
+ [][][][]  
+ []
+
+
+
+
+Overfull \hbox (51.88048pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[16
+
+]
+Overfull \hbox (51.88048pt too wide) in paragraph at lines 249--249
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) in paragraph at lines 249--249
+ [][][][]  
+ []
+
+
+
+
+Overfull \hbox (51.88048pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (73.94936pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[17
 
 ]
 \tf@nav=\write6
@@ -1346,24 +1459,25 @@ Package rerunfilecheck Info: File `sunum.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21872 strings out of 473190
- 426311 string characters out of 5715800
+ 21989 strings out of 473190
+ 428763 string characters out of 5715800
  793493 words of memory out of 5000000
- 44662 multiletter control sequences out of 15000+600000
- 562196 words of font info for 48 fonts, out of 8000000 for 9000
+ 44748 multiletter control sequences out of 15000+600000
+ 570623 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,123p,412b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr
-/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on docs/sunum.pdf (13 pages, 1245782 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
+/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on docs/sunum.pdf (17 pages, 1266356 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 372 compressed objects within 4 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 561 PDF objects out of 1000 (max. 8388607)
+ 476 compressed objects within 5 object streams
+ 35 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
