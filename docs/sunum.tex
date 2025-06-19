@@ -248,4 +248,32 @@
     Teşekkürler
 \end{frame}
 
+%----------------------------------------------
+% Veri seti ayrıntıları ve ek veriseti seçenekleri
+%----------------------------------------------
+
+\begin{frame}{Veri Seti Detayı: Cora Citation Network}
+    \begin{itemize}
+        \item \textbf{Alan:} Makine Öğrenmesi literatüründeki 2708 bilimsel makaledan oluşan atıf (citation) ağı.
+        \item \textbf{Düğümler:} Makaleler ($|V| = 2708$). Her düğüm 1433 boyutlu ikili kelime özelliğine sahiptir.
+        \item \textbf{Kenarlar:} Atıf ilişkileri ($|E| = 5429$). Yönlü kenarlar simetrik hale getirilerek çizge undirected yapılmıştır.
+        \item \textbf{Sınıflar:} 7 araştırma konusu ("Neural Networks", "Probabilistic Methods", vb.).
+        \item \textbf{Neden Seçildi?} Küçük boyutu sayesinde hızlı prototipleme; zengin özellik vektörleriyle hem klasik hem GNN tabanlı yöntemler için uygun bir benchmark.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Entegrasyona Açık Diğer Veri Setleri}
+\framesubtitle{Gelecek Çalışmalar İçin Çeşitlendirme}
+    \begin{itemize}
+        \item \textbf{Citeseer} \small(3312 düğüm, 4732 kenar, 3703 özellik, 6 sınıf)\normalsize: Cora'ya benzer akademik atıf ağı; doğrudan aynı ön-işleme boru hattına eklenebilir.
+        \item \textbf{Pubmed} \small(19K düğüm, 44K kenar, 500 özellik, 3 sınıf)\normalsize: Daha büyük ölçek—model genelleyebilirliğini test etmek için ideal.
+        \item \textbf{Amazon Computers/Photo}: E-ticaret ortak-satın alma grafiği → heterojen ağlara geçiş denemeleri.
+        \item \textbf{Reddit (full / TIL)}: 232K düğüm, 11M kenar – GNN'lerin büyük veri üzerindeki verimliliğini incelemek.
+        \item \textbf{OGB (ogbn-arxiv, ogbn-products)}: Standartlaştırılmış ayrım ve kıyaslama setleri; sonuçların literatürle karşılaştırılmasını kolaylaştırır.
+        \item \textbf{DBLP Co-author}: Çoklu topluluk (overlapping) yapısı; metodların örtüşen topluluklardaki başarısını ölçmek.
+    \end{itemize}
+    \vspace{0.3cm}
+    Bu veri setleri, mevcut \texttt{data\_loader.py} sınıfı genişletilerek veya Neo4j'e yeni çizge projeksiyonları oluşturularak kolayca sisteme entegre edilebilir.
+\end{frame}
+
 \end{document}
