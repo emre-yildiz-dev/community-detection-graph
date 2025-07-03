@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.30)  3 JUL 2025 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.30)  3 JUL 2025 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,42 +331,71 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count301
 \@thisrulewidth=\dimen197
 )
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count302
+\lst@gtempboxa=\box56
+\lst@token=\toks24
+\lst@length=\count303
+\lst@currlwidth=\dimen198
+\lst@column=\count304
+\lst@pos=\count305
+\lst@lostspace=\dimen199
+\lst@width=\dimen256
+\lst@newlines=\count306
+\lst@lineno=\count307
+\lst@maxwidth=\dimen257
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count308
+\lst@skipnumbers=\count309
+\lst@framebox=\box57
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
 (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count302
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count310
+\l__pdf_internal_box=\box58
 )
-No file report.aux.
+(./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen198
-\scratchbox=\box57
-\nofMPsegments=\count304
-\nofMParguments=\count305
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen199
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count311
+\scratchdimen=\dimen258
+\scratchbox=\box59
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen259
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -377,27 +406,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count317
 
-
-
-LaTeX Warning: Citation `blondel2008fast' on page 1 undefined on input line 51.
-
-
-
-LaTeX Warning: Citation `raghavan2007near' on page 1 undefined on input line 51
-.
-
-
-LaTeX Warning: Citation `kipf2016semi' on page 1 undefined on input line 53.
-
-
-LaTeX Warning: Citation `hamilton2017inductive' on page 1 undefined on input li
-ne 53.
-
-
-LaTeX Warning: Citation `veličković2017graph' on page 1 undefined on input li
-ne 53.
 
 
 
@@ -406,65 +418,284 @@ ocal/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 105
+.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 105
+.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: Reference `fig:dataset_stats' on page 2 undefined on input line 
-81.
-
 <results/dataset_stats.png, id=10, 1018.0434pt x 426.393pt>
 File: results/dataset_stats.png Graphic file (type png)
 <use results/dataset_stats.png>
-Package pdftex.def Info: results/dataset_stats.png  used on input line 84.
+Package pdftex.def Info: results/dataset_stats.png  used on input line 114.
 (pdftex.def)             Requested size: 247.6778pt x 103.73524pt.
 
 
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+58.
 
-LaTeX Warning: Reference `tab:results' on page 2 undefined on input line 148.
-
-
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
 
 [2 <./results/dataset_stats.png>]
-Underfull \hbox (badness 1622) in paragraph at lines 177--178
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177     \item \textbf{PyTorch (≥2.0.0)}
+                                           : Primary deep learning framework...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 ...tem \textbf{PyTorch Geometric (≥2.3.0)}
+                                                  : Specialized library for ...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183     \item \textbf{Neo4j (≥5.0.0)}
+                                         : Graph database for data storage a...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184     \item \textbf{py2neo (≥2021.2.0)}
+                                             : Python driver for Neo4j datab...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189     \item \textbf{Pandas (≥1.5.0)}
+                                          : Data manipulation and analysis, ...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190     \item \textbf{NumPy (≥1.20.0)}
+                                          : Numerical computing foundation f...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191     \item \textbf{NetworkX (≥2.8.0)}
+                                            : Graph analysis and manipulatio...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192     \item \textbf{Scikit-learn (≥1.2.0)}
+                                                : Machine learning utilities...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197     \item \textbf{Matplotlib (≥3.6.0)}
+                                              : Static plotting for performa...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     \item \textbf{Seaborn (≥0.12.0)}
+                                            : Statistical visualization enha...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199     \item \textbf{Plotly (≥5.15.0)}
+                                           : Interactive visualization for n...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204     \item \textbf{tqdm (≥4.64.0)}
+                                         : Progress bars for long-running tr...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205     \item \textbf{python-dotenv (≥1.0.0)}
+                                                 : Environment variable mana...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206     \item \textbf{Requests (≥2.28.0)}
+                                             : HTTP library for dataset down...
+
+? 
+
+! LaTeX Error: Unicode character ≥ (U+2265)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207     \item \textbf{Jupyter (≥1.0.0)}
+                                           : Interactive development environ...
+
+? 
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+
+
+
+[3]
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 378--379
 []\OT1/ptm/b/n/10 Supervised vs. Un-su-per-vised GNNs\OT1/ptm/m/n/10 : Su-per-v
 ised ap-
  []
 
-
-LaTeX Warning: Reference `fig:evaluation_metrics' on page 3 undefined on input 
-line 181.
-
-<results/evaluation_metrics.png, id=17, 996.6033pt x 426.1521pt>
+<results/evaluation_metrics.png, id=21, 996.6033pt x 426.1521pt>
 File: results/evaluation_metrics.png Graphic file (type png)
 <use results/evaluation_metrics.png>
-Package pdftex.def Info: results/evaluation_metrics.png  used on input line 184
+Package pdftex.def Info: results/evaluation_metrics.png  used on input line 385
 .
 (pdftex.def)             Requested size: 247.6778pt x 105.90701pt.
-
-LaTeX Warning: Reference `fig:community_comparison' on page 3 undefined on inpu
-t line 191.
-
-<results/community_comparison.png, id=18, 1149.093pt x 860.013pt>
+<results/community_comparison.png, id=22, 1149.093pt x 860.013pt>
 File: results/community_comparison.png Graphic file (type png)
 <use results/community_comparison.png>
-Package pdftex.def Info: results/community_comparison.png  used on input line 1
-94.
+Package pdftex.def Info: results/community_comparison.png  used on input line 3
+95.
 (pdftex.def)             Requested size: 247.6778pt x 185.35847pt.
 
 
+[4 <./results/evaluation_metrics.png>]
 
 
-[3 <./results/evaluation_metrics.png> <./results/community_comparison.png>]
+Underfull \hbox (badness 2671) in paragraph at lines 479--480
+\OT1/ptm/m/n/10 sults re-veal dis-tinct per-for-mance pat-terns across dif-fer-
+
+ []
+
+
+
+[5 <./results/community_comparison.png>]
+Underfull \hbox (badness 1406) in paragraph at lines 508--509
+[]\OT1/ptm/b/n/10 Semi-supervised GNNs\OT1/ptm/m/n/10 : Di-rectly op-ti-mize fo
+r sub-
+ []
+
+
+
+
+
+[6]
+Underfull \hbox (badness 3503) in paragraph at lines 581--582
+\OT1/ptm/m/n/10 through en-sem-ble tech-niques or hi-er-ar-chi-cal pro-cess-ing
+
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 591--592
+[]\OT1/ptm/b/n/10 Performance Op-ti-miza-tion\OT1/ptm/m/n/10 : GPU ac-cel-er-a-
+tion for all
+ []
+
+
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 603--604
+[]\OT1/ptm/b/n/10 Temporal Datasets\OT1/ptm/m/n/10 : In-te-gra-tion of dy-namic
+ net-work
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -478,40 +709,30 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-
-
-[4
-
-] (./report.aux)
+[7] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 5884 strings out of 473190
- 97779 string characters out of 5715800
- 505773 words of memory out of 5000000
- 29084 multiletter control sequences out of 15000+600000
- 595217 words of font info for 106 fonts, out of 8000000 for 9000
+ 7999 strings out of 473190
+ 125681 string characters out of 5715800
+ 1242633 words of memory out of 5000000
+ 31174 multiletter control sequences out of 15000+600000
+ 597026 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,8n,77p,1207b,301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,8n,77p,1207b,1716s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-</usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
-l/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive
-/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texm
-f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (4 pages, 963301 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
+e/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (7 pages, 997966 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
