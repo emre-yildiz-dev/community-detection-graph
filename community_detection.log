@@ -1,852 +1,422 @@
-2025-06-07 14:04:27,514 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 14:04:27,514 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 14:04:27,514 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:04:27,625 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:04:28,281 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 14:04:28,282 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:04:28,385 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:04:28,386 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 14:04:28,408 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 14:04:28,408 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 14:04:28,408 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 14:04:28,534 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 14:04:28,725 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 14:04:28,725 - __main__ - ERROR - Error in main execution: {code: Neo.ClientError.Statement.ExternalResourceFailed} {message: Couldn't load the external resource at: file:/var/lib/neo4j/import/cora/cora.content ()}
-2025-06-07 14:05:11,881 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 14:05:11,881 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 14:05:11,881 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:05:11,977 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:05:12,600 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 14:05:12,601 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:05:12,700 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:05:12,701 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 14:05:12,720 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 14:05:12,720 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 14:05:12,720 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 14:05:12,722 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 14:05:12,727 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 14:05:12,727 - __main__ - ERROR - Error in main execution: {code: Neo.ClientError.Statement.ExternalResourceFailed} {message: Couldn't load the external resource at: file:/var/lib/neo4j/import/cora/cora.content ()}
-2025-06-07 14:07:06,388 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 14:07:06,389 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 14:07:06,389 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:07:06,508 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:07:07,163 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 14:07:07,164 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:07:07,264 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:07:07,266 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 14:07:07,286 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 14:07:07,287 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 14:07:07,287 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 14:07:07,420 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 14:07:13,170 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:07:13,171 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 14:07:14,834 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=104 modularities=[0.5301092239099483, 0.7683333276220929, 0.8197423963683839, 0.8198504575602648]>
-2025-06-07 14:07:14,840 - __main__ - INFO - Running Label Propagation algorithm...
-2025-06-07 14:07:14,979 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
-2025-06-07 14:07:14,979 - __main__ - INFO - Classical algorithms completed
-2025-06-07 14:07:15,339 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 14:07:15,339 - __main__ - INFO - Preparing PyTorch data...
-2025-06-07 14:07:15,339 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:07:15,439 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:07:15,507 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
-2025-06-07 14:07:15,508 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 14:07:15,508 - __main__ - ERROR - Error in main execution: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
-2025-06-07 14:07:41,614 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 14:07:41,614 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 14:07:41,615 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:07:41,715 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:07:42,358 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 14:07:42,359 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:07:42,462 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:07:42,464 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 14:07:42,492 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 14:07:42,492 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 14:07:42,492 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 14:07:42,542 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 14:07:47,981 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:07:47,981 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 14:07:48,033 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 14:07:48,033 - __main__ - ERROR - Error in main execution: {code: Neo.ClientError.Procedure.ProcedureCallFailed} {message: Failed to invoke procedure `gds.graph.project`: Caused by: java.lang.IllegalArgumentException: A graph with name 'cora-graph' already exists.}
-2025-06-07 14:08:31,341 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 14:08:31,341 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 14:08:31,341 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:08:31,446 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:08:32,130 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 14:08:32,131 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:08:32,233 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:08:32,234 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 14:08:32,254 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 14:08:32,254 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 14:08:32,254 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 14:08:32,275 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 14:08:37,778 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:08:37,778 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 14:08:37,805 - src.neo4j_manager - INFO - Dropped existing cora-graph projection
-2025-06-07 14:08:39,041 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=105 modularities=[0.5636611891799973, 0.7799029322107545, 0.8186131314671105, 0.8207076695048365]>
-2025-06-07 14:08:39,041 - __main__ - INFO - Running Label Propagation algorithm...
-2025-06-07 14:08:39,093 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
-2025-06-07 14:08:39,093 - __main__ - INFO - Classical algorithms completed
-2025-06-07 14:08:39,253 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 14:08:39,253 - __main__ - INFO - Preparing PyTorch data...
-2025-06-07 14:08:39,253 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:08:39,351 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:08:39,416 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
-2025-06-07 14:08:39,417 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 14:08:39,417 - __main__ - ERROR - Error in main execution: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
-2025-06-07 14:09:15,836 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 14:09:15,836 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 14:09:15,836 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:09:15,936 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:09:16,578 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 14:09:16,579 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:09:16,676 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:09:16,677 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 14:09:16,693 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 14:09:16,693 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 14:09:16,693 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 14:09:16,706 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 14:09:22,133 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:09:22,134 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 14:09:22,137 - src.neo4j_manager - INFO - Dropped existing cora-graph projection
-2025-06-07 14:09:23,329 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=104 modularities=[0.562931411407075, 0.7798132770460622, 0.8196532840542632, 0.8210859006404994]>
-2025-06-07 14:09:23,329 - __main__ - INFO - Running Label Propagation algorithm...
-2025-06-07 14:09:23,373 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
-2025-06-07 14:09:23,373 - __main__ - INFO - Classical algorithms completed
-2025-06-07 14:09:23,522 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 14:09:23,522 - __main__ - INFO - Preparing PyTorch data...
-2025-06-07 14:09:23,522 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:09:23,621 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:09:23,686 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
-2025-06-07 14:09:23,737 - __main__ - INFO - PyTorch data prepared: Data(x=[2708, 1433], edge_index=[2, 5429], y=[2708], paper_ids=[2708], louvain_communities=[2708], lpa_communities=[2708])
-2025-06-07 14:09:23,738 - __main__ - INFO - Running GNN experiments...
-2025-06-07 14:09:23,738 - __main__ - INFO - Using device: cpu
-2025-06-07 14:09:23,741 - __main__ - INFO - Number of communities - Louvain: 104, LPA: 224, True classes: 7
-2025-06-07 14:09:23,741 - __main__ - INFO - Training GCN model...
-2025-06-07 14:09:23,861 - src.gnn_models - INFO - Epoch 000, Loss: 1.3401
-2025-06-07 14:09:24,636 - src.gnn_models - INFO - Epoch 050, Loss: 1.2604
-2025-06-07 14:09:25,406 - src.gnn_models - INFO - Epoch 100, Loss: 1.2515
-2025-06-07 14:09:26,162 - src.gnn_models - INFO - Epoch 150, Loss: 1.2430
-2025-06-07 14:09:27,047 - __main__ - INFO - GCN unsupervised training completed
-2025-06-07 14:09:27,076 - src.gnn_models - INFO - Epoch 000, Loss: 2.1030, Val Acc: 0.4305
-2025-06-07 14:09:27,218 - src.gnn_models - INFO - Epoch 010, Loss: 0.6513, Val Acc: 0.8143
-2025-06-07 14:09:27,340 - src.gnn_models - INFO - Epoch 020, Loss: 0.2960, Val Acc: 0.8303
-2025-06-07 14:09:27,455 - src.gnn_models - INFO - Epoch 030, Loss: 0.2019, Val Acc: 0.8143
-2025-06-07 14:09:27,572 - src.gnn_models - INFO - Epoch 040, Loss: 0.1364, Val Acc: 0.8081
-2025-06-07 14:09:27,686 - src.gnn_models - INFO - Epoch 050, Loss: 0.1137, Val Acc: 0.8020
-2025-06-07 14:09:27,802 - src.gnn_models - INFO - Epoch 060, Loss: 0.0857, Val Acc: 0.8032
-2025-06-07 14:09:27,916 - src.gnn_models - INFO - Epoch 070, Loss: 0.0783, Val Acc: 0.8081
-2025-06-07 14:09:28,033 - src.gnn_models - INFO - Epoch 080, Loss: 0.0798, Val Acc: 0.8057
-2025-06-07 14:09:28,150 - src.gnn_models - INFO - Epoch 090, Loss: 0.0711, Val Acc: 0.8069
-2025-06-07 14:09:28,266 - src.gnn_models - INFO - Epoch 100, Loss: 0.0559, Val Acc: 0.8093
-2025-06-07 14:09:28,384 - src.gnn_models - INFO - Epoch 110, Loss: 0.0491, Val Acc: 0.7970
-2025-06-07 14:09:28,501 - src.gnn_models - INFO - Epoch 120, Loss: 0.0591, Val Acc: 0.8020
-2025-06-07 14:09:28,622 - src.gnn_models - INFO - Epoch 130, Loss: 0.0507, Val Acc: 0.7946
-2025-06-07 14:09:28,739 - src.gnn_models - INFO - Epoch 140, Loss: 0.0441, Val Acc: 0.7860
-2025-06-07 14:09:28,858 - src.gnn_models - INFO - Epoch 150, Loss: 0.0510, Val Acc: 0.7860
-2025-06-07 14:09:28,975 - src.gnn_models - INFO - Epoch 160, Loss: 0.0510, Val Acc: 0.7884
-2025-06-07 14:09:29,096 - src.gnn_models - INFO - Epoch 170, Loss: 0.0369, Val Acc: 0.7823
-2025-06-07 14:09:29,213 - src.gnn_models - INFO - Epoch 180, Loss: 0.0399, Val Acc: 0.7860
-2025-06-07 14:09:29,329 - src.gnn_models - INFO - Epoch 190, Loss: 0.0390, Val Acc: 0.7921
-2025-06-07 14:09:29,435 - __main__ - INFO - GCN semi-supervised training completed
-2025-06-07 14:09:29,435 - __main__ - INFO - Training SAGE model...
-2025-06-07 14:09:29,484 - src.gnn_models - INFO - Epoch 000, Loss: 1.3923
-2025-06-07 14:09:30,820 - src.gnn_models - INFO - Epoch 050, Loss: 1.2658
-2025-06-07 14:09:32,174 - src.gnn_models - INFO - Epoch 100, Loss: 1.2495
-2025-06-07 14:09:33,750 - src.gnn_models - INFO - Epoch 150, Loss: 1.2431
-2025-06-07 14:09:35,338 - __main__ - INFO - SAGE unsupervised training completed
-2025-06-07 14:09:35,384 - src.gnn_models - INFO - Epoch 000, Loss: 2.1297, Val Acc: 0.2103
-2025-06-07 14:09:35,675 - src.gnn_models - INFO - Epoch 010, Loss: 0.5356, Val Acc: 0.7970
-2025-06-07 14:09:35,914 - src.gnn_models - INFO - Epoch 020, Loss: 0.1771, Val Acc: 0.8069
-2025-06-07 14:09:36,132 - src.gnn_models - INFO - Epoch 030, Loss: 0.0809, Val Acc: 0.7872
-2025-06-07 14:09:36,371 - src.gnn_models - INFO - Epoch 040, Loss: 0.0534, Val Acc: 0.7847
-2025-06-07 14:09:36,592 - src.gnn_models - INFO - Epoch 050, Loss: 0.0480, Val Acc: 0.7872
-2025-06-07 14:09:36,843 - src.gnn_models - INFO - Epoch 060, Loss: 0.0323, Val Acc: 0.7897
-2025-06-07 14:09:37,082 - src.gnn_models - INFO - Epoch 070, Loss: 0.0242, Val Acc: 0.7811
-2025-06-07 14:09:37,341 - src.gnn_models - INFO - Epoch 080, Loss: 0.0202, Val Acc: 0.7847
-2025-06-07 14:09:37,560 - src.gnn_models - INFO - Epoch 090, Loss: 0.0233, Val Acc: 0.7872
-2025-06-07 14:09:37,767 - src.gnn_models - INFO - Epoch 100, Loss: 0.0173, Val Acc: 0.7835
-2025-06-07 14:09:38,009 - src.gnn_models - INFO - Epoch 110, Loss: 0.0241, Val Acc: 0.7884
-2025-06-07 14:09:38,216 - src.gnn_models - INFO - Epoch 120, Loss: 0.0143, Val Acc: 0.7860
-2025-06-07 14:09:38,464 - src.gnn_models - INFO - Epoch 130, Loss: 0.0120, Val Acc: 0.7798
-2025-06-07 14:09:38,706 - src.gnn_models - INFO - Epoch 140, Loss: 0.0164, Val Acc: 0.7774
-2025-06-07 14:09:38,935 - src.gnn_models - INFO - Epoch 150, Loss: 0.0106, Val Acc: 0.7823
-2025-06-07 14:09:39,164 - src.gnn_models - INFO - Epoch 160, Loss: 0.0115, Val Acc: 0.7860
-2025-06-07 14:09:39,384 - src.gnn_models - INFO - Epoch 170, Loss: 0.0158, Val Acc: 0.7860
-2025-06-07 14:09:39,593 - src.gnn_models - INFO - Epoch 180, Loss: 0.0125, Val Acc: 0.7860
-2025-06-07 14:09:39,803 - src.gnn_models - INFO - Epoch 190, Loss: 0.0167, Val Acc: 0.7884
-2025-06-07 14:09:39,995 - __main__ - INFO - SAGE semi-supervised training completed
-2025-06-07 14:09:39,995 - __main__ - INFO - Training GAT model...
-2025-06-07 14:09:40,048 - src.gnn_models - INFO - Epoch 000, Loss: 1.3439
-2025-06-07 14:09:41,059 - src.gnn_models - INFO - Epoch 050, Loss: 1.2549
-2025-06-07 14:09:42,026 - src.gnn_models - INFO - Epoch 100, Loss: 1.2476
-2025-06-07 14:09:43,019 - src.gnn_models - INFO - Epoch 150, Loss: 1.2431
-2025-06-07 14:09:44,015 - __main__ - INFO - GAT unsupervised training completed
-2025-06-07 14:09:44,048 - src.gnn_models - INFO - Epoch 000, Loss: 2.1405, Val Acc: 0.3985
-2025-06-07 14:09:44,238 - src.gnn_models - INFO - Epoch 010, Loss: 0.7171, Val Acc: 0.7995
-2025-06-07 14:09:44,399 - src.gnn_models - INFO - Epoch 020, Loss: 0.2775, Val Acc: 0.8450
-2025-06-07 14:09:44,561 - src.gnn_models - INFO - Epoch 030, Loss: 0.1610, Val Acc: 0.8462
-2025-06-07 14:09:44,723 - src.gnn_models - INFO - Epoch 040, Loss: 0.1131, Val Acc: 0.8327
-2025-06-07 14:09:44,886 - src.gnn_models - INFO - Epoch 050, Loss: 0.0894, Val Acc: 0.8352
-2025-06-07 14:09:45,048 - src.gnn_models - INFO - Epoch 060, Loss: 0.0665, Val Acc: 0.8229
-2025-06-07 14:09:45,223 - src.gnn_models - INFO - Epoch 070, Loss: 0.0539, Val Acc: 0.8241
-2025-06-07 14:09:45,385 - src.gnn_models - INFO - Epoch 080, Loss: 0.0547, Val Acc: 0.8155
-2025-06-07 14:09:45,544 - src.gnn_models - INFO - Epoch 090, Loss: 0.0458, Val Acc: 0.8143
-2025-06-07 14:09:45,704 - src.gnn_models - INFO - Epoch 100, Loss: 0.0387, Val Acc: 0.8155
-2025-06-07 14:09:45,865 - src.gnn_models - INFO - Epoch 110, Loss: 0.0346, Val Acc: 0.8180
-2025-06-07 14:09:46,022 - src.gnn_models - INFO - Epoch 120, Loss: 0.0355, Val Acc: 0.8130
-2025-06-07 14:09:46,182 - src.gnn_models - INFO - Epoch 130, Loss: 0.0278, Val Acc: 0.8093
-2025-06-07 14:09:46,355 - src.gnn_models - INFO - Epoch 140, Loss: 0.0324, Val Acc: 0.8167
-2025-06-07 14:09:46,515 - src.gnn_models - INFO - Epoch 150, Loss: 0.0247, Val Acc: 0.8106
-2025-06-07 14:09:46,675 - src.gnn_models - INFO - Epoch 160, Loss: 0.0292, Val Acc: 0.8167
-2025-06-07 14:09:46,839 - src.gnn_models - INFO - Epoch 170, Loss: 0.0184, Val Acc: 0.8106
-2025-06-07 14:09:47,002 - src.gnn_models - INFO - Epoch 180, Loss: 0.0271, Val Acc: 0.8044
-2025-06-07 14:09:47,162 - src.gnn_models - INFO - Epoch 190, Loss: 0.0229, Val Acc: 0.8069
-2025-06-07 14:09:47,308 - __main__ - INFO - GAT semi-supervised training completed
-2025-06-07 14:09:47,308 - __main__ - INFO - Evaluating results...
-2025-06-07 14:09:48,852 - src.neo4j_manager - INFO - Updated 2708 nodes with GNN predictions
-2025-06-07 14:09:48,861 - __main__ - INFO - Best GNN method (gat_semi_supervised) results written to Neo4j
-2025-06-07 14:09:48,861 - __main__ - INFO - Creating visualizations...
-2025-06-07 14:10:32,809 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 14:10:32,809 - __main__ - ERROR - Error in main execution: unhashable type: 'list'
-2025-06-07 14:10:56,748 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 14:10:56,749 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 14:10:56,749 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:10:56,873 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:10:57,511 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 14:10:57,512 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:10:57,616 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:10:57,617 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 14:10:57,637 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 14:10:57,637 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 14:10:57,637 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 14:10:57,648 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 14:11:03,073 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:11:03,073 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 14:11:03,077 - src.neo4j_manager - INFO - Dropped existing cora-graph projection
-2025-06-07 14:11:03,908 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=103 modularities=[0.5376309953562186, 0.7711003218052116, 0.8187585814921001, 0.8199277798385366]>
-2025-06-07 14:11:03,908 - __main__ - INFO - Running Label Propagation algorithm...
-2025-06-07 14:11:03,949 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
-2025-06-07 14:11:03,949 - __main__ - INFO - Classical algorithms completed
-2025-06-07 14:11:04,101 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 14:11:04,101 - __main__ - INFO - Preparing PyTorch data...
-2025-06-07 14:11:04,101 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:11:04,199 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:11:04,266 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
-2025-06-07 14:11:04,317 - __main__ - INFO - PyTorch data prepared: Data(x=[2708, 1433], edge_index=[2, 5429], y=[2708], paper_ids=[2708], louvain_communities=[2708], lpa_communities=[2708])
-2025-06-07 14:11:04,318 - __main__ - INFO - Running GNN experiments...
-2025-06-07 14:11:04,318 - __main__ - INFO - Using device: cpu
-2025-06-07 14:11:04,318 - __main__ - INFO - Number of communities - Louvain: 103, LPA: 224, True classes: 7
-2025-06-07 14:11:04,318 - __main__ - INFO - Training GCN model...
-2025-06-07 14:11:04,373 - src.gnn_models - INFO - Epoch 000, Loss: 1.3480
-2025-06-07 14:11:05,152 - src.gnn_models - INFO - Epoch 050, Loss: 1.2601
-2025-06-07 14:11:06,074 - src.gnn_models - INFO - Epoch 100, Loss: 1.2478
-2025-06-07 14:11:06,895 - src.gnn_models - INFO - Epoch 150, Loss: 1.2474
-2025-06-07 14:11:07,716 - __main__ - INFO - GCN unsupervised training completed
-2025-06-07 14:11:07,742 - src.gnn_models - INFO - Epoch 000, Loss: 2.1003, Val Acc: 0.3198
-2025-06-07 14:11:07,918 - src.gnn_models - INFO - Epoch 010, Loss: 0.6259, Val Acc: 0.8143
-2025-06-07 14:11:08,041 - src.gnn_models - INFO - Epoch 020, Loss: 0.2999, Val Acc: 0.8315
-2025-06-07 14:11:08,152 - src.gnn_models - INFO - Epoch 030, Loss: 0.1732, Val Acc: 0.8143
-2025-06-07 14:11:08,263 - src.gnn_models - INFO - Epoch 040, Loss: 0.1433, Val Acc: 0.8130
-2025-06-07 14:11:08,376 - src.gnn_models - INFO - Epoch 050, Loss: 0.1200, Val Acc: 0.8069
-2025-06-07 14:11:08,489 - src.gnn_models - INFO - Epoch 060, Loss: 0.0982, Val Acc: 0.8081
-2025-06-07 14:11:08,601 - src.gnn_models - INFO - Epoch 070, Loss: 0.0821, Val Acc: 0.8057
-2025-06-07 14:11:08,711 - src.gnn_models - INFO - Epoch 080, Loss: 0.0722, Val Acc: 0.7934
-2025-06-07 14:11:08,823 - src.gnn_models - INFO - Epoch 090, Loss: 0.0596, Val Acc: 0.8007
-2025-06-07 14:11:08,936 - src.gnn_models - INFO - Epoch 100, Loss: 0.0589, Val Acc: 0.7921
-2025-06-07 14:11:09,047 - src.gnn_models - INFO - Epoch 110, Loss: 0.0617, Val Acc: 0.7934
-2025-06-07 14:11:09,157 - src.gnn_models - INFO - Epoch 120, Loss: 0.0450, Val Acc: 0.7970
-2025-06-07 14:11:09,274 - src.gnn_models - INFO - Epoch 130, Loss: 0.0467, Val Acc: 0.7835
-2025-06-07 14:11:09,386 - src.gnn_models - INFO - Epoch 140, Loss: 0.0520, Val Acc: 0.7835
-2025-06-07 14:11:09,496 - src.gnn_models - INFO - Epoch 150, Loss: 0.0377, Val Acc: 0.7872
-2025-06-07 14:11:09,609 - src.gnn_models - INFO - Epoch 160, Loss: 0.0506, Val Acc: 0.7921
-2025-06-07 14:11:09,718 - src.gnn_models - INFO - Epoch 170, Loss: 0.0360, Val Acc: 0.7872
-2025-06-07 14:11:09,845 - src.gnn_models - INFO - Epoch 180, Loss: 0.0358, Val Acc: 0.7897
-2025-06-07 14:11:09,973 - src.gnn_models - INFO - Epoch 190, Loss: 0.0359, Val Acc: 0.7897
-2025-06-07 14:11:10,082 - __main__ - INFO - GCN semi-supervised training completed
-2025-06-07 14:11:10,083 - __main__ - INFO - Training SAGE model...
-2025-06-07 14:11:10,137 - src.gnn_models - INFO - Epoch 000, Loss: 1.3914
-2025-06-07 14:11:11,492 - src.gnn_models - INFO - Epoch 050, Loss: 1.2663
-2025-06-07 14:11:12,804 - src.gnn_models - INFO - Epoch 100, Loss: 1.2542
-2025-06-07 14:11:14,145 - src.gnn_models - INFO - Epoch 150, Loss: 1.2450
-2025-06-07 14:11:15,531 - __main__ - INFO - SAGE unsupervised training completed
-2025-06-07 14:11:15,578 - src.gnn_models - INFO - Epoch 000, Loss: 2.0211, Val Acc: 0.3665
-2025-06-07 14:11:15,856 - src.gnn_models - INFO - Epoch 010, Loss: 0.5474, Val Acc: 0.7970
-2025-06-07 14:11:16,118 - src.gnn_models - INFO - Epoch 020, Loss: 0.1737, Val Acc: 0.8057
-2025-06-07 14:11:16,350 - src.gnn_models - INFO - Epoch 030, Loss: 0.0903, Val Acc: 0.7921
-2025-06-07 14:11:16,577 - src.gnn_models - INFO - Epoch 040, Loss: 0.0399, Val Acc: 0.7934
-2025-06-07 14:11:16,843 - src.gnn_models - INFO - Epoch 050, Loss: 0.0366, Val Acc: 0.7909
-2025-06-07 14:11:17,071 - src.gnn_models - INFO - Epoch 060, Loss: 0.0290, Val Acc: 0.7958
-2025-06-07 14:11:17,312 - src.gnn_models - INFO - Epoch 070, Loss: 0.0278, Val Acc: 0.7983
-2025-06-07 14:11:17,544 - src.gnn_models - INFO - Epoch 080, Loss: 0.0255, Val Acc: 0.7860
-2025-06-07 14:11:17,784 - src.gnn_models - INFO - Epoch 090, Loss: 0.0178, Val Acc: 0.7897
-2025-06-07 14:11:18,022 - src.gnn_models - INFO - Epoch 100, Loss: 0.0198, Val Acc: 0.7847
-2025-06-07 14:11:18,257 - src.gnn_models - INFO - Epoch 110, Loss: 0.0241, Val Acc: 0.7909
-2025-06-07 14:11:18,490 - src.gnn_models - INFO - Epoch 120, Loss: 0.0176, Val Acc: 0.7897
-2025-06-07 14:11:18,732 - src.gnn_models - INFO - Epoch 130, Loss: 0.0199, Val Acc: 0.7872
-2025-06-07 14:11:18,976 - src.gnn_models - INFO - Epoch 140, Loss: 0.0200, Val Acc: 0.7860
-2025-06-07 14:11:19,270 - src.gnn_models - INFO - Epoch 150, Loss: 0.0105, Val Acc: 0.7897
-2025-06-07 14:11:19,510 - src.gnn_models - INFO - Epoch 160, Loss: 0.0159, Val Acc: 0.7872
-2025-06-07 14:11:19,745 - src.gnn_models - INFO - Epoch 170, Loss: 0.0149, Val Acc: 0.7897
-2025-06-07 14:11:20,024 - src.gnn_models - INFO - Epoch 180, Loss: 0.0135, Val Acc: 0.7921
-2025-06-07 14:11:20,259 - src.gnn_models - INFO - Epoch 190, Loss: 0.0127, Val Acc: 0.7958
-2025-06-07 14:11:20,478 - __main__ - INFO - SAGE semi-supervised training completed
-2025-06-07 14:11:20,478 - __main__ - INFO - Training GAT model...
-2025-06-07 14:11:20,533 - src.gnn_models - INFO - Epoch 000, Loss: 1.3486
-2025-06-07 14:11:21,534 - src.gnn_models - INFO - Epoch 050, Loss: 1.2573
-2025-06-07 14:11:22,532 - src.gnn_models - INFO - Epoch 100, Loss: 1.2424
-2025-06-07 14:11:23,535 - src.gnn_models - INFO - Epoch 150, Loss: 1.2425
-2025-06-07 14:11:24,562 - __main__ - INFO - GAT unsupervised training completed
-2025-06-07 14:11:24,593 - src.gnn_models - INFO - Epoch 000, Loss: 2.0680, Val Acc: 0.1796
-2025-06-07 14:11:24,786 - src.gnn_models - INFO - Epoch 010, Loss: 0.6572, Val Acc: 0.8032
-2025-06-07 14:11:24,951 - src.gnn_models - INFO - Epoch 020, Loss: 0.2668, Val Acc: 0.8401
-2025-06-07 14:11:25,130 - src.gnn_models - INFO - Epoch 030, Loss: 0.1529, Val Acc: 0.8376
-2025-06-07 14:11:25,298 - src.gnn_models - INFO - Epoch 040, Loss: 0.0943, Val Acc: 0.8266
-2025-06-07 14:11:25,466 - src.gnn_models - INFO - Epoch 050, Loss: 0.0751, Val Acc: 0.8253
-2025-06-07 14:11:25,633 - src.gnn_models - INFO - Epoch 060, Loss: 0.0572, Val Acc: 0.8216
-2025-06-07 14:11:25,806 - src.gnn_models - INFO - Epoch 070, Loss: 0.0540, Val Acc: 0.8229
-2025-06-07 14:11:25,977 - src.gnn_models - INFO - Epoch 080, Loss: 0.0413, Val Acc: 0.8167
-2025-06-07 14:11:26,145 - src.gnn_models - INFO - Epoch 090, Loss: 0.0403, Val Acc: 0.8180
-2025-06-07 14:11:26,317 - src.gnn_models - INFO - Epoch 100, Loss: 0.0285, Val Acc: 0.8192
-2025-06-07 14:11:26,482 - src.gnn_models - INFO - Epoch 110, Loss: 0.0278, Val Acc: 0.8093
-2025-06-07 14:11:26,643 - src.gnn_models - INFO - Epoch 120, Loss: 0.0335, Val Acc: 0.8081
-2025-06-07 14:11:26,817 - src.gnn_models - INFO - Epoch 130, Loss: 0.0252, Val Acc: 0.8167
-2025-06-07 14:11:27,016 - src.gnn_models - INFO - Epoch 140, Loss: 0.0227, Val Acc: 0.8081
-2025-06-07 14:11:27,200 - src.gnn_models - INFO - Epoch 150, Loss: 0.0238, Val Acc: 0.8081
-2025-06-07 14:11:27,388 - src.gnn_models - INFO - Epoch 160, Loss: 0.0209, Val Acc: 0.8081
-2025-06-07 14:11:27,564 - src.gnn_models - INFO - Epoch 170, Loss: 0.0264, Val Acc: 0.8143
-2025-06-07 14:11:27,725 - src.gnn_models - INFO - Epoch 180, Loss: 0.0220, Val Acc: 0.8081
-2025-06-07 14:11:27,890 - src.gnn_models - INFO - Epoch 190, Loss: 0.0226, Val Acc: 0.8057
-2025-06-07 14:11:28,036 - __main__ - INFO - GAT semi-supervised training completed
-2025-06-07 14:11:28,036 - __main__ - INFO - Evaluating results...
-2025-06-07 14:11:29,879 - src.neo4j_manager - INFO - Updated 2708 nodes with GNN predictions
-2025-06-07 14:11:29,890 - __main__ - INFO - Best GNN method (gat_semi_supervised) results written to Neo4j
-2025-06-07 14:11:29,891 - __main__ - INFO - Creating visualizations...
-2025-06-07 14:12:29,823 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 14:12:29,871 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
-2025-06-07 14:13:28,345 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
-2025-06-07 14:13:57,265 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 14:13:57,265 - __main__ - ERROR - Error in main execution: Unsupported subplot type: 'radar'
-2025-06-07 14:15:48,813 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 14:15:48,813 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 14:15:48,813 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:15:48,915 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:15:49,555 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 14:15:49,556 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:15:49,654 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:15:49,655 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 14:15:49,673 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 14:15:49,673 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 14:15:49,673 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 14:15:49,685 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 14:15:55,170 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:15:55,170 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 14:15:55,172 - src.neo4j_manager - INFO - Dropped existing cora-graph projection
-2025-06-07 14:15:57,122 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=105 modularities=[0.5629326328208608, 0.7799029322107545, 0.8186131314671105, 0.8207076695048365]>
-2025-06-07 14:15:57,122 - __main__ - INFO - Running Label Propagation algorithm...
-2025-06-07 14:15:57,160 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
-2025-06-07 14:15:57,160 - __main__ - INFO - Classical algorithms completed
-2025-06-07 14:15:57,309 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 14:15:57,309 - __main__ - INFO - Preparing PyTorch data...
-2025-06-07 14:15:57,309 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 14:15:57,409 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 14:15:57,475 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
-2025-06-07 14:15:57,527 - __main__ - INFO - PyTorch data prepared: Data(x=[2708, 1433], edge_index=[2, 5429], y=[2708], paper_ids=[2708], louvain_communities=[2708], lpa_communities=[2708])
-2025-06-07 14:15:57,527 - __main__ - INFO - Running GNN experiments...
-2025-06-07 14:15:57,527 - __main__ - INFO - Using device: cpu
-2025-06-07 14:15:57,527 - __main__ - INFO - Number of communities - Louvain: 105, LPA: 224, True classes: 7
-2025-06-07 14:15:57,527 - __main__ - INFO - Training GCN model...
-2025-06-07 14:15:57,587 - src.gnn_models - INFO - Epoch 000, Loss: 1.3431
-2025-06-07 14:15:58,350 - src.gnn_models - INFO - Epoch 050, Loss: 1.2577
-2025-06-07 14:15:59,157 - src.gnn_models - INFO - Epoch 100, Loss: 1.2482
-2025-06-07 14:15:59,897 - src.gnn_models - INFO - Epoch 150, Loss: 1.2444
-2025-06-07 14:16:00,775 - __main__ - INFO - GCN unsupervised training completed
-2025-06-07 14:16:00,800 - src.gnn_models - INFO - Epoch 000, Loss: 2.0825, Val Acc: 0.4194
-2025-06-07 14:16:00,942 - src.gnn_models - INFO - Epoch 010, Loss: 0.6231, Val Acc: 0.8204
-2025-06-07 14:16:01,065 - src.gnn_models - INFO - Epoch 020, Loss: 0.2810, Val Acc: 0.8327
-2025-06-07 14:16:01,182 - src.gnn_models - INFO - Epoch 030, Loss: 0.1918, Val Acc: 0.8192
-2025-06-07 14:16:01,309 - src.gnn_models - INFO - Epoch 040, Loss: 0.1374, Val Acc: 0.8106
-2025-06-07 14:16:01,439 - src.gnn_models - INFO - Epoch 050, Loss: 0.1032, Val Acc: 0.8093
-2025-06-07 14:16:01,568 - src.gnn_models - INFO - Epoch 060, Loss: 0.1021, Val Acc: 0.8081
-2025-06-07 14:16:01,691 - src.gnn_models - INFO - Epoch 070, Loss: 0.0649, Val Acc: 0.7934
-2025-06-07 14:16:01,815 - src.gnn_models - INFO - Epoch 080, Loss: 0.0609, Val Acc: 0.7909
-2025-06-07 14:16:01,935 - src.gnn_models - INFO - Epoch 090, Loss: 0.0794, Val Acc: 0.7958
-2025-06-07 14:16:02,052 - src.gnn_models - INFO - Epoch 100, Loss: 0.0562, Val Acc: 0.7970
-2025-06-07 14:16:02,171 - src.gnn_models - INFO - Epoch 110, Loss: 0.0537, Val Acc: 0.7958
-2025-06-07 14:16:02,288 - src.gnn_models - INFO - Epoch 120, Loss: 0.0419, Val Acc: 0.7934
-2025-06-07 14:16:02,405 - src.gnn_models - INFO - Epoch 130, Loss: 0.0468, Val Acc: 0.7958
-2025-06-07 14:16:02,522 - src.gnn_models - INFO - Epoch 140, Loss: 0.0424, Val Acc: 0.7884
-2025-06-07 14:16:02,639 - src.gnn_models - INFO - Epoch 150, Loss: 0.0460, Val Acc: 0.7934
-2025-06-07 14:16:02,755 - src.gnn_models - INFO - Epoch 160, Loss: 0.0390, Val Acc: 0.7934
-2025-06-07 14:16:02,871 - src.gnn_models - INFO - Epoch 170, Loss: 0.0431, Val Acc: 0.7909
-2025-06-07 14:16:02,988 - src.gnn_models - INFO - Epoch 180, Loss: 0.0363, Val Acc: 0.7884
-2025-06-07 14:16:03,105 - src.gnn_models - INFO - Epoch 190, Loss: 0.0302, Val Acc: 0.7884
-2025-06-07 14:16:03,210 - __main__ - INFO - GCN semi-supervised training completed
-2025-06-07 14:16:03,210 - __main__ - INFO - Training SAGE model...
-2025-06-07 14:16:03,259 - src.gnn_models - INFO - Epoch 000, Loss: 1.3933
-2025-06-07 14:16:04,534 - src.gnn_models - INFO - Epoch 050, Loss: 1.2627
-2025-06-07 14:16:05,850 - src.gnn_models - INFO - Epoch 100, Loss: 1.2528
-2025-06-07 14:16:07,152 - src.gnn_models - INFO - Epoch 150, Loss: 1.2497
-2025-06-07 14:16:08,453 - __main__ - INFO - SAGE unsupervised training completed
-2025-06-07 14:16:08,491 - src.gnn_models - INFO - Epoch 000, Loss: 2.0332, Val Acc: 0.3875
-2025-06-07 14:16:08,723 - src.gnn_models - INFO - Epoch 010, Loss: 0.5336, Val Acc: 0.7872
-2025-06-07 14:16:08,930 - src.gnn_models - INFO - Epoch 020, Loss: 0.1691, Val Acc: 0.7934
-2025-06-07 14:16:09,146 - src.gnn_models - INFO - Epoch 030, Loss: 0.0754, Val Acc: 0.7909
-2025-06-07 14:16:09,370 - src.gnn_models - INFO - Epoch 040, Loss: 0.0484, Val Acc: 0.7897
-2025-06-07 14:16:09,602 - src.gnn_models - INFO - Epoch 050, Loss: 0.0287, Val Acc: 0.7872
-2025-06-07 14:16:09,907 - src.gnn_models - INFO - Epoch 060, Loss: 0.0273, Val Acc: 0.7860
-2025-06-07 14:16:10,136 - src.gnn_models - INFO - Epoch 070, Loss: 0.0214, Val Acc: 0.7811
-2025-06-07 14:16:10,373 - src.gnn_models - INFO - Epoch 080, Loss: 0.0172, Val Acc: 0.7761
-2025-06-07 14:16:10,593 - src.gnn_models - INFO - Epoch 090, Loss: 0.0214, Val Acc: 0.7835
-2025-06-07 14:16:10,815 - src.gnn_models - INFO - Epoch 100, Loss: 0.0230, Val Acc: 0.7860
-2025-06-07 14:16:11,037 - src.gnn_models - INFO - Epoch 110, Loss: 0.0139, Val Acc: 0.7884
-2025-06-07 14:16:11,270 - src.gnn_models - INFO - Epoch 120, Loss: 0.0142, Val Acc: 0.7811
-2025-06-07 14:16:11,501 - src.gnn_models - INFO - Epoch 130, Loss: 0.0119, Val Acc: 0.7872
-2025-06-07 14:16:11,744 - src.gnn_models - INFO - Epoch 140, Loss: 0.0161, Val Acc: 0.7884
-2025-06-07 14:16:11,967 - src.gnn_models - INFO - Epoch 150, Loss: 0.0121, Val Acc: 0.7872
-2025-06-07 14:16:12,206 - src.gnn_models - INFO - Epoch 160, Loss: 0.0086, Val Acc: 0.7884
-2025-06-07 14:16:12,437 - src.gnn_models - INFO - Epoch 170, Loss: 0.0069, Val Acc: 0.7921
-2025-06-07 14:16:12,660 - src.gnn_models - INFO - Epoch 180, Loss: 0.0111, Val Acc: 0.7835
-2025-06-07 14:16:12,901 - src.gnn_models - INFO - Epoch 190, Loss: 0.0107, Val Acc: 0.7798
-2025-06-07 14:16:13,095 - __main__ - INFO - SAGE semi-supervised training completed
-2025-06-07 14:16:13,095 - __main__ - INFO - Training GAT model...
-2025-06-07 14:16:13,148 - src.gnn_models - INFO - Epoch 000, Loss: 1.3509
-2025-06-07 14:16:14,108 - src.gnn_models - INFO - Epoch 050, Loss: 1.2552
-2025-06-07 14:16:15,097 - src.gnn_models - INFO - Epoch 100, Loss: 1.2461
-2025-06-07 14:16:16,100 - src.gnn_models - INFO - Epoch 150, Loss: 1.2447
-2025-06-07 14:16:17,104 - __main__ - INFO - GAT unsupervised training completed
-2025-06-07 14:16:17,132 - src.gnn_models - INFO - Epoch 000, Loss: 2.0349, Val Acc: 0.3198
-2025-06-07 14:16:17,316 - src.gnn_models - INFO - Epoch 010, Loss: 0.6395, Val Acc: 0.8192
-2025-06-07 14:16:17,472 - src.gnn_models - INFO - Epoch 020, Loss: 0.2671, Val Acc: 0.8426
-2025-06-07 14:16:17,631 - src.gnn_models - INFO - Epoch 030, Loss: 0.1554, Val Acc: 0.8327
-2025-06-07 14:16:17,789 - src.gnn_models - INFO - Epoch 040, Loss: 0.1127, Val Acc: 0.8229
-2025-06-07 14:16:17,947 - src.gnn_models - INFO - Epoch 050, Loss: 0.0765, Val Acc: 0.8216
-2025-06-07 14:16:18,107 - src.gnn_models - INFO - Epoch 060, Loss: 0.0501, Val Acc: 0.8130
-2025-06-07 14:16:18,277 - src.gnn_models - INFO - Epoch 070, Loss: 0.0642, Val Acc: 0.8155
-2025-06-07 14:16:18,440 - src.gnn_models - INFO - Epoch 080, Loss: 0.0433, Val Acc: 0.8118
-2025-06-07 14:16:18,600 - src.gnn_models - INFO - Epoch 090, Loss: 0.0430, Val Acc: 0.8155
-2025-06-07 14:16:18,758 - src.gnn_models - INFO - Epoch 100, Loss: 0.0382, Val Acc: 0.8081
-2025-06-07 14:16:18,916 - src.gnn_models - INFO - Epoch 110, Loss: 0.0404, Val Acc: 0.8081
-2025-06-07 14:16:19,074 - src.gnn_models - INFO - Epoch 120, Loss: 0.0313, Val Acc: 0.8057
-2025-06-07 14:16:19,233 - src.gnn_models - INFO - Epoch 130, Loss: 0.0324, Val Acc: 0.8143
-2025-06-07 14:16:19,393 - src.gnn_models - INFO - Epoch 140, Loss: 0.0261, Val Acc: 0.8180
-2025-06-07 14:16:19,555 - src.gnn_models - INFO - Epoch 150, Loss: 0.0287, Val Acc: 0.8069
-2025-06-07 14:16:19,769 - src.gnn_models - INFO - Epoch 160, Loss: 0.0290, Val Acc: 0.8118
-2025-06-07 14:16:19,926 - src.gnn_models - INFO - Epoch 170, Loss: 0.0188, Val Acc: 0.8143
-2025-06-07 14:16:20,085 - src.gnn_models - INFO - Epoch 180, Loss: 0.0229, Val Acc: 0.8069
-2025-06-07 14:16:20,245 - src.gnn_models - INFO - Epoch 190, Loss: 0.0203, Val Acc: 0.8057
-2025-06-07 14:16:20,392 - __main__ - INFO - GAT semi-supervised training completed
-2025-06-07 14:16:20,393 - __main__ - INFO - Evaluating results...
-2025-06-07 14:16:21,881 - src.neo4j_manager - INFO - Updated 2708 nodes with GNN predictions
-2025-06-07 14:16:21,892 - __main__ - INFO - Best GNN method (gat_semi_supervised) results written to Neo4j
-2025-06-07 14:16:21,892 - __main__ - INFO - Creating visualizations...
-2025-06-07 14:16:29,567 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 14:16:29,613 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
-2025-06-07 14:17:29,061 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
-2025-06-07 14:17:58,847 - src.visualization - INFO - Results summary saved to /Users/emre/code/projects/community-detection/results
-2025-06-07 14:17:58,905 - src.neo4j_manager - INFO - Graph projection cleaned up
-2025-06-07 14:17:58,907 - neo4j.notifications - WARNING - Received notification from DBMS server: {severity: WARNING} {code: Neo.ClientNotification.Statement.FeatureDeprecationWarning} {category: DEPRECATION} {title: This feature is deprecated and will be removed in future versions.} {description: The query used a deprecated field from a procedure. ('schema' returned by 'gds.graph.drop' is deprecated.)} {position: line: 1, column: 1, offset: 0} for query: "CALL gds.graph.drop('cora-graph')"
-2025-06-07 14:17:58,908 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 14:17:58,908 - __main__ - INFO - === FINAL RESULTS ===
-2025-06-07 14:17:58,908 - __main__ - INFO - Louvain:
-2025-06-07 14:17:58,908 - __main__ - INFO -   ARI: 0.2364
-2025-06-07 14:17:58,908 - __main__ - INFO -   NMI: 0.4537
-2025-06-07 14:17:58,908 - __main__ - INFO -   Communities: 105
-2025-06-07 14:17:58,908 - __main__ - INFO - Label_Propagation:
-2025-06-07 14:17:58,908 - __main__ - INFO -   ARI: 0.1464
-2025-06-07 14:17:58,908 - __main__ - INFO -   NMI: 0.3830
-2025-06-07 14:17:58,908 - __main__ - INFO -   Communities: 224
-2025-06-07 14:17:58,908 - __main__ - INFO - gcn_unsupervised:
-2025-06-07 14:17:58,908 - __main__ - INFO -   ARI: 0.0713
-2025-06-07 14:17:58,908 - __main__ - INFO -   NMI: 0.3525
-2025-06-07 14:17:58,908 - __main__ - INFO -   Communities: 105
-2025-06-07 14:17:58,908 - __main__ - INFO - gcn_semi_supervised:
-2025-06-07 14:17:58,908 - __main__ - INFO -   ARI: 0.8608
-2025-06-07 14:17:58,908 - __main__ - INFO -   NMI: 0.8212
-2025-06-07 14:17:58,908 - __main__ - INFO -   Communities: 7
-2025-06-07 14:17:58,908 - __main__ - INFO - sage_unsupervised:
-2025-06-07 14:17:58,908 - __main__ - INFO -   ARI: 0.0690
-2025-06-07 14:17:58,908 - __main__ - INFO -   NMI: 0.3515
-2025-06-07 14:17:58,908 - __main__ - INFO -   Communities: 105
-2025-06-07 14:17:58,908 - __main__ - INFO - sage_semi_supervised:
-2025-06-07 14:17:58,908 - __main__ - INFO -   ARI: 0.8504
-2025-06-07 14:17:58,908 - __main__ - INFO -   NMI: 0.8116
-2025-06-07 14:17:58,908 - __main__ - INFO -   Communities: 7
-2025-06-07 14:17:58,908 - __main__ - INFO - gat_unsupervised:
-2025-06-07 14:17:58,908 - __main__ - INFO -   ARI: 0.0702
-2025-06-07 14:17:58,908 - __main__ - INFO -   NMI: 0.3758
-2025-06-07 14:17:58,908 - __main__ - INFO -   Communities: 105
-2025-06-07 14:17:58,908 - __main__ - INFO - gat_semi_supervised:
-2025-06-07 14:17:58,908 - __main__ - INFO -   ARI: 0.8751
-2025-06-07 14:17:58,908 - __main__ - INFO -   NMI: 0.8367
-2025-06-07 14:17:58,908 - __main__ - INFO -   Communities: 7
-2025-06-07 14:17:58,908 - __main__ - INFO - Community Detection project completed successfully!
-2025-06-07 18:29:15,862 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 18:29:15,862 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 18:29:15,863 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:29:15,981 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:29:16,620 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 18:29:16,621 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:29:16,716 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:29:16,718 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 18:29:16,775 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 18:29:16,775 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 18:29:16,775 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 18:29:16,799 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 18:29:22,719 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:29:22,720 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 18:29:22,723 - src.neo4j_manager - INFO - Dropped existing cora-graph projection
-2025-06-07 18:29:22,729 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 18:29:22,731 - __main__ - ERROR - Error in main execution: {code: Neo.ClientError.Procedure.ProcedureCallFailed} {message: Failed to invoke procedure `gds.graph.drop`: Caused by: java.util.NoSuchElementException: Graph with name `cora-graph` does not exist on database `neo4j`. It might exist on another database.}
-2025-06-07 18:31:48,530 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 18:31:48,532 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 18:31:48,532 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:31:48,642 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:31:49,294 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 18:31:49,295 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:31:49,399 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:31:49,402 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 18:31:49,409 - src.neo4j_manager - ERROR - Failed to connect to Neo4j: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
-Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7687, 0, 0)) (deadline Deadline(timeout=60.0))
-Failed to read four byte Bolt handshake response from server ResolvedIPv4Address(('127.0.0.1', 7687)) (deadline Deadline(timeout=60.0))
-2025-06-07 18:31:49,409 - __main__ - ERROR - Error in main execution: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
-Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7687, 0, 0)) (deadline Deadline(timeout=60.0))
-Failed to read four byte Bolt handshake response from server ResolvedIPv4Address(('127.0.0.1', 7687)) (deadline Deadline(timeout=60.0))
-2025-06-07 18:32:56,251 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 18:32:56,251 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 18:32:56,252 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:32:56,354 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:32:57,000 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 18:32:57,001 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:32:57,105 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:32:57,106 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 18:32:57,113 - src.neo4j_manager - ERROR - Failed to connect to Neo4j: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
-Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7687, 0, 0)) (deadline Deadline(timeout=60.0))
-Failed to read four byte Bolt handshake response from server ResolvedIPv4Address(('127.0.0.1', 7687)) (deadline Deadline(timeout=60.0))
-2025-06-07 18:32:57,113 - __main__ - ERROR - Error in main execution: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
-Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7687, 0, 0)) (deadline Deadline(timeout=60.0))
-Failed to read four byte Bolt handshake response from server ResolvedIPv4Address(('127.0.0.1', 7687)) (deadline Deadline(timeout=60.0))
-2025-06-07 18:37:01,548 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 18:37:01,549 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 18:37:01,549 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:37:01,661 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:37:02,307 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 18:37:02,308 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:37:02,404 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:37:02,406 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 18:37:02,437 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 18:37:02,437 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 18:37:02,437 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 18:37:02,601 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 18:37:08,316 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:37:08,317 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 18:37:08,388 - src.neo4j_manager - INFO - Dropped existing cora-graph projection
-2025-06-07 18:37:08,448 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 18:37:08,448 - __main__ - ERROR - Error in main execution: {code: Neo.ClientError.Procedure.ProcedureCallFailed} {message: Failed to invoke procedure `gds.graph.drop`: Caused by: java.util.NoSuchElementException: Graph with name `cora-graph` does not exist on database `neo4j`. It might exist on another database.}
-2025-06-07 18:37:45,730 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 18:37:45,730 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 18:37:45,730 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:37:45,832 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:37:46,510 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 18:37:46,512 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:37:46,610 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:37:46,611 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 18:37:46,646 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 18:37:46,646 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 18:37:46,646 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 18:37:46,705 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 18:37:51,848 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:37:51,848 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 18:37:51,882 - src.neo4j_manager - INFO - No existing cora-graph projection to drop
-2025-06-07 18:37:53,657 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=104 modularities=[0.5301092239099483, 0.7683333276220929, 0.8197423963683839, 0.8198504575602648]>
-2025-06-07 18:37:53,657 - __main__ - INFO - Running Label Propagation algorithm...
-2025-06-07 18:37:53,763 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
-2025-06-07 18:37:53,763 - __main__ - INFO - Classical algorithms completed
-2025-06-07 18:37:54,181 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 18:37:54,181 - __main__ - INFO - Preparing PyTorch data...
-2025-06-07 18:37:54,181 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:37:54,281 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:37:54,391 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
-2025-06-07 18:37:54,443 - __main__ - INFO - PyTorch data prepared: Data(x=[2708, 1433], edge_index=[2, 5429], y=[2708], paper_ids=[2708], louvain_communities=[2708], lpa_communities=[2708])
-2025-06-07 18:37:54,444 - __main__ - INFO - Running GNN experiments...
-2025-06-07 18:37:54,444 - __main__ - INFO - Using device: cpu
-2025-06-07 18:37:54,448 - __main__ - INFO - Number of communities - Louvain: 104, LPA: 224, True classes: 7
-2025-06-07 18:37:54,448 - __main__ - INFO - Training GCN model...
-2025-06-07 18:37:54,539 - src.gnn_models - INFO - Epoch 000, Loss: 1.3456
-2025-06-07 18:37:55,273 - src.gnn_models - INFO - Epoch 050, Loss: 1.2619
-2025-06-07 18:37:55,991 - src.gnn_models - INFO - Epoch 100, Loss: 1.2498
-2025-06-07 18:37:56,714 - src.gnn_models - INFO - Epoch 150, Loss: 1.2499
-2025-06-07 18:37:57,533 - __main__ - INFO - GCN unsupervised training completed
-2025-06-07 18:37:57,562 - src.gnn_models - INFO - Epoch 000, Loss: 2.0897, Val Acc: 0.2645
-2025-06-07 18:37:57,700 - src.gnn_models - INFO - Epoch 010, Loss: 0.6335, Val Acc: 0.8155
-2025-06-07 18:37:57,816 - src.gnn_models - INFO - Epoch 020, Loss: 0.2879, Val Acc: 0.8216
-2025-06-07 18:37:57,927 - src.gnn_models - INFO - Epoch 030, Loss: 0.1875, Val Acc: 0.8192
-2025-06-07 18:37:58,039 - src.gnn_models - INFO - Epoch 040, Loss: 0.1331, Val Acc: 0.8155
-2025-06-07 18:37:58,152 - src.gnn_models - INFO - Epoch 050, Loss: 0.1061, Val Acc: 0.8081
-2025-06-07 18:37:58,262 - src.gnn_models - INFO - Epoch 060, Loss: 0.0876, Val Acc: 0.8007
-2025-06-07 18:37:58,378 - src.gnn_models - INFO - Epoch 070, Loss: 0.0745, Val Acc: 0.7946
-2025-06-07 18:37:58,492 - src.gnn_models - INFO - Epoch 080, Loss: 0.0664, Val Acc: 0.7946
-2025-06-07 18:37:58,604 - src.gnn_models - INFO - Epoch 090, Loss: 0.0738, Val Acc: 0.7897
-2025-06-07 18:37:58,716 - src.gnn_models - INFO - Epoch 100, Loss: 0.0581, Val Acc: 0.7983
-2025-06-07 18:37:58,832 - src.gnn_models - INFO - Epoch 110, Loss: 0.0524, Val Acc: 0.7983
-2025-06-07 18:37:58,943 - src.gnn_models - INFO - Epoch 120, Loss: 0.0532, Val Acc: 0.7995
-2025-06-07 18:37:59,056 - src.gnn_models - INFO - Epoch 130, Loss: 0.0574, Val Acc: 0.7909
-2025-06-07 18:37:59,167 - src.gnn_models - INFO - Epoch 140, Loss: 0.0451, Val Acc: 0.7884
-2025-06-07 18:37:59,279 - src.gnn_models - INFO - Epoch 150, Loss: 0.0544, Val Acc: 0.7884
-2025-06-07 18:37:59,391 - src.gnn_models - INFO - Epoch 160, Loss: 0.0401, Val Acc: 0.7995
-2025-06-07 18:37:59,503 - src.gnn_models - INFO - Epoch 170, Loss: 0.0493, Val Acc: 0.7958
-2025-06-07 18:37:59,614 - src.gnn_models - INFO - Epoch 180, Loss: 0.0278, Val Acc: 0.7934
-2025-06-07 18:37:59,726 - src.gnn_models - INFO - Epoch 190, Loss: 0.0444, Val Acc: 0.7946
-2025-06-07 18:37:59,827 - __main__ - INFO - GCN semi-supervised training completed
-2025-06-07 18:37:59,827 - __main__ - INFO - Training SAGE model...
-2025-06-07 18:37:59,877 - src.gnn_models - INFO - Epoch 000, Loss: 1.3929
-2025-06-07 18:38:01,100 - src.gnn_models - INFO - Epoch 050, Loss: 1.2681
-2025-06-07 18:38:02,310 - src.gnn_models - INFO - Epoch 100, Loss: 1.2502
-2025-06-07 18:38:03,437 - src.gnn_models - INFO - Epoch 150, Loss: 1.2448
-2025-06-07 18:38:04,658 - __main__ - INFO - SAGE unsupervised training completed
-2025-06-07 18:38:04,695 - src.gnn_models - INFO - Epoch 000, Loss: 2.1563, Val Acc: 0.3973
-2025-06-07 18:38:04,925 - src.gnn_models - INFO - Epoch 010, Loss: 0.5690, Val Acc: 0.7934
-2025-06-07 18:38:05,137 - src.gnn_models - INFO - Epoch 020, Loss: 0.2034, Val Acc: 0.8155
-2025-06-07 18:38:05,335 - src.gnn_models - INFO - Epoch 030, Loss: 0.0786, Val Acc: 0.7983
-2025-06-07 18:38:05,533 - src.gnn_models - INFO - Epoch 040, Loss: 0.0580, Val Acc: 0.7860
-2025-06-07 18:38:05,746 - src.gnn_models - INFO - Epoch 050, Loss: 0.0389, Val Acc: 0.7847
-2025-06-07 18:38:05,942 - src.gnn_models - INFO - Epoch 060, Loss: 0.0292, Val Acc: 0.7774
-2025-06-07 18:38:06,152 - src.gnn_models - INFO - Epoch 070, Loss: 0.0350, Val Acc: 0.7761
-2025-06-07 18:38:06,365 - src.gnn_models - INFO - Epoch 080, Loss: 0.0233, Val Acc: 0.7774
-2025-06-07 18:38:06,568 - src.gnn_models - INFO - Epoch 090, Loss: 0.0222, Val Acc: 0.7847
-2025-06-07 18:38:06,763 - src.gnn_models - INFO - Epoch 100, Loss: 0.0127, Val Acc: 0.7774
-2025-06-07 18:38:06,967 - src.gnn_models - INFO - Epoch 110, Loss: 0.0105, Val Acc: 0.7749
-2025-06-07 18:38:07,170 - src.gnn_models - INFO - Epoch 120, Loss: 0.0147, Val Acc: 0.7798
-2025-06-07 18:38:07,378 - src.gnn_models - INFO - Epoch 130, Loss: 0.0092, Val Acc: 0.7835
-2025-06-07 18:38:07,619 - src.gnn_models - INFO - Epoch 140, Loss: 0.0151, Val Acc: 0.7835
-2025-06-07 18:38:07,856 - src.gnn_models - INFO - Epoch 150, Loss: 0.0145, Val Acc: 0.7774
-2025-06-07 18:38:08,153 - src.gnn_models - INFO - Epoch 160, Loss: 0.0139, Val Acc: 0.7749
-2025-06-07 18:38:08,393 - src.gnn_models - INFO - Epoch 170, Loss: 0.0084, Val Acc: 0.7811
-2025-06-07 18:38:08,634 - src.gnn_models - INFO - Epoch 180, Loss: 0.0099, Val Acc: 0.7847
-2025-06-07 18:38:08,847 - src.gnn_models - INFO - Epoch 190, Loss: 0.0154, Val Acc: 0.7847
-2025-06-07 18:38:09,027 - __main__ - INFO - SAGE semi-supervised training completed
-2025-06-07 18:38:09,027 - __main__ - INFO - Training GAT model...
-2025-06-07 18:38:09,080 - src.gnn_models - INFO - Epoch 000, Loss: 1.3457
-2025-06-07 18:38:10,025 - src.gnn_models - INFO - Epoch 050, Loss: 1.2556
-2025-06-07 18:38:10,974 - src.gnn_models - INFO - Epoch 100, Loss: 1.2469
-2025-06-07 18:38:11,906 - src.gnn_models - INFO - Epoch 150, Loss: 1.2453
-2025-06-07 18:38:12,895 - __main__ - INFO - GAT unsupervised training completed
-2025-06-07 18:38:12,921 - src.gnn_models - INFO - Epoch 000, Loss: 2.0986, Val Acc: 0.2214
-2025-06-07 18:38:13,103 - src.gnn_models - INFO - Epoch 010, Loss: 0.6522, Val Acc: 0.8352
-2025-06-07 18:38:13,261 - src.gnn_models - INFO - Epoch 020, Loss: 0.2676, Val Acc: 0.8426
-2025-06-07 18:38:13,421 - src.gnn_models - INFO - Epoch 030, Loss: 0.1371, Val Acc: 0.8290
-2025-06-07 18:38:13,581 - src.gnn_models - INFO - Epoch 040, Loss: 0.1104, Val Acc: 0.8290
-2025-06-07 18:38:13,750 - src.gnn_models - INFO - Epoch 050, Loss: 0.0916, Val Acc: 0.8204
-2025-06-07 18:38:13,931 - src.gnn_models - INFO - Epoch 060, Loss: 0.0608, Val Acc: 0.8216
-2025-06-07 18:38:14,101 - src.gnn_models - INFO - Epoch 070, Loss: 0.0605, Val Acc: 0.8155
-2025-06-07 18:38:14,280 - src.gnn_models - INFO - Epoch 080, Loss: 0.0413, Val Acc: 0.8106
-2025-06-07 18:38:14,442 - src.gnn_models - INFO - Epoch 090, Loss: 0.0469, Val Acc: 0.8081
-2025-06-07 18:38:14,607 - src.gnn_models - INFO - Epoch 100, Loss: 0.0399, Val Acc: 0.8143
-2025-06-07 18:38:14,765 - src.gnn_models - INFO - Epoch 110, Loss: 0.0333, Val Acc: 0.8130
-2025-06-07 18:38:14,930 - src.gnn_models - INFO - Epoch 120, Loss: 0.0298, Val Acc: 0.8130
-2025-06-07 18:38:15,089 - src.gnn_models - INFO - Epoch 130, Loss: 0.0327, Val Acc: 0.8143
-2025-06-07 18:38:15,249 - src.gnn_models - INFO - Epoch 140, Loss: 0.0254, Val Acc: 0.8130
-2025-06-07 18:38:15,407 - src.gnn_models - INFO - Epoch 150, Loss: 0.0259, Val Acc: 0.8143
-2025-06-07 18:38:15,565 - src.gnn_models - INFO - Epoch 160, Loss: 0.0359, Val Acc: 0.8155
-2025-06-07 18:38:15,723 - src.gnn_models - INFO - Epoch 170, Loss: 0.0177, Val Acc: 0.8081
-2025-06-07 18:38:15,881 - src.gnn_models - INFO - Epoch 180, Loss: 0.0195, Val Acc: 0.8081
-2025-06-07 18:38:16,041 - src.gnn_models - INFO - Epoch 190, Loss: 0.0209, Val Acc: 0.8093
-2025-06-07 18:38:16,191 - __main__ - INFO - GAT semi-supervised training completed
-2025-06-07 18:38:16,192 - __main__ - INFO - Evaluating results...
-2025-06-07 18:38:17,650 - src.neo4j_manager - INFO - Updated 2708 nodes with GNN predictions
-2025-06-07 18:38:17,666 - __main__ - INFO - Best GNN method (gat_semi_supervised) results written to Neo4j
-2025-06-07 18:38:17,666 - __main__ - INFO - Creating visualizations...
-2025-06-07 18:38:28,917 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 18:38:28,963 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
-2025-06-07 18:39:28,541 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
-2025-06-07 18:39:57,312 - src.visualization - INFO - Results summary saved to /Users/emre/code/projects/community-detection/results
-2025-06-07 18:39:57,376 - src.neo4j_manager - INFO - Graph projection cleaned up
-2025-06-07 18:39:57,384 - neo4j.notifications - WARNING - Received notification from DBMS server: {severity: WARNING} {code: Neo.ClientNotification.Statement.FeatureDeprecationWarning} {category: DEPRECATION} {title: This feature is deprecated and will be removed in future versions.} {description: The query used a deprecated field from a procedure. ('schema' returned by 'gds.graph.drop' is deprecated.)} {position: line: 1, column: 1, offset: 0} for query: "CALL gds.graph.drop('cora-graph')"
-2025-06-07 18:39:57,384 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 18:39:57,384 - __main__ - INFO - === FINAL RESULTS ===
-2025-06-07 18:39:57,384 - __main__ - INFO - Louvain:
-2025-06-07 18:39:57,384 - __main__ - INFO -   ARI: 0.2312
-2025-06-07 18:39:57,384 - __main__ - INFO -   NMI: 0.4537
-2025-06-07 18:39:57,384 - __main__ - INFO -   Communities: 104
-2025-06-07 18:39:57,384 - __main__ - INFO - Label_Propagation:
-2025-06-07 18:39:57,384 - __main__ - INFO -   ARI: 0.1464
-2025-06-07 18:39:57,384 - __main__ - INFO -   NMI: 0.3830
-2025-06-07 18:39:57,385 - __main__ - INFO -   Communities: 224
-2025-06-07 18:39:57,385 - __main__ - INFO - gcn_unsupervised:
-2025-06-07 18:39:57,385 - __main__ - INFO -   ARI: 0.0725
-2025-06-07 18:39:57,385 - __main__ - INFO -   NMI: 0.3616
-2025-06-07 18:39:57,385 - __main__ - INFO -   Communities: 104
-2025-06-07 18:39:57,385 - __main__ - INFO - gcn_semi_supervised:
-2025-06-07 18:39:57,385 - __main__ - INFO -   ARI: 0.8613
-2025-06-07 18:39:57,385 - __main__ - INFO -   NMI: 0.8241
-2025-06-07 18:39:57,385 - __main__ - INFO -   Communities: 7
-2025-06-07 18:39:57,385 - __main__ - INFO - sage_unsupervised:
-2025-06-07 18:39:57,385 - __main__ - INFO -   ARI: 0.0606
-2025-06-07 18:39:57,385 - __main__ - INFO -   NMI: 0.3458
-2025-06-07 18:39:57,385 - __main__ - INFO -   Communities: 104
-2025-06-07 18:39:57,385 - __main__ - INFO - sage_semi_supervised:
-2025-06-07 18:39:57,385 - __main__ - INFO -   ARI: 0.8563
-2025-06-07 18:39:57,385 - __main__ - INFO -   NMI: 0.8210
-2025-06-07 18:39:57,385 - __main__ - INFO -   Communities: 7
-2025-06-07 18:39:57,385 - __main__ - INFO - gat_unsupervised:
-2025-06-07 18:39:57,385 - __main__ - INFO -   ARI: 0.0753
-2025-06-07 18:39:57,385 - __main__ - INFO -   NMI: 0.3672
-2025-06-07 18:39:57,385 - __main__ - INFO -   Communities: 104
-2025-06-07 18:39:57,385 - __main__ - INFO - gat_semi_supervised:
-2025-06-07 18:39:57,385 - __main__ - INFO -   ARI: 0.8702
-2025-06-07 18:39:57,385 - __main__ - INFO -   NMI: 0.8326
-2025-06-07 18:39:57,385 - __main__ - INFO -   Communities: 7
-2025-06-07 18:39:57,385 - __main__ - INFO - Community Detection project completed successfully!
-2025-06-07 18:40:15,594 - __main__ - INFO - Starting Community Detection project...
-2025-06-07 18:40:15,594 - __main__ - INFO - Setting up Cora dataset...
-2025-06-07 18:40:15,595 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:40:15,689 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:40:16,349 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/community-detection/data/cora/cora.content and /Users/emre/code/projects/community-detection/data/cora/cora.cites
-2025-06-07 18:40:16,350 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:40:16,453 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:40:16,454 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
-2025-06-07 18:40:16,470 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
-2025-06-07 18:40:16,470 - __main__ - INFO - Running classical community detection algorithms...
-2025-06-07 18:40:16,470 - __main__ - INFO - Loading data into Neo4j...
-2025-06-07 18:40:16,488 - src.neo4j_manager - INFO - Database cleared
-2025-06-07 18:40:21,597 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:40:21,597 - __main__ - INFO - Running Louvain algorithm...
-2025-06-07 18:40:21,601 - src.neo4j_manager - INFO - No existing cora-graph projection to drop
-2025-06-07 18:40:22,848 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=103 modularities=[0.557633105009252, 0.7700404230285219, 0.8166877762027949, 0.8180555560739026]>
-2025-06-07 18:40:22,848 - __main__ - INFO - Running Label Propagation algorithm...
-2025-06-07 18:40:22,900 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
-2025-06-07 18:40:22,900 - __main__ - INFO - Classical algorithms completed
-2025-06-07 18:40:23,049 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 18:40:23,049 - __main__ - INFO - Preparing PyTorch data...
-2025-06-07 18:40:23,049 - src.data_loader - INFO - Cora dataset already exists
-2025-06-07 18:40:23,146 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
-2025-06-07 18:40:23,211 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
-2025-06-07 18:40:23,262 - __main__ - INFO - PyTorch data prepared: Data(x=[2708, 1433], edge_index=[2, 5429], y=[2708], paper_ids=[2708], louvain_communities=[2708], lpa_communities=[2708])
-2025-06-07 18:40:23,263 - __main__ - INFO - Running GNN experiments...
-2025-06-07 18:40:23,263 - __main__ - INFO - Using device: cpu
-2025-06-07 18:40:23,263 - __main__ - INFO - Number of communities - Louvain: 103, LPA: 224, True classes: 7
-2025-06-07 18:40:23,263 - __main__ - INFO - Training GCN model...
-2025-06-07 18:40:23,319 - src.gnn_models - INFO - Epoch 000, Loss: 1.3432
-2025-06-07 18:40:24,019 - src.gnn_models - INFO - Epoch 050, Loss: 1.2684
-2025-06-07 18:40:24,768 - src.gnn_models - INFO - Epoch 100, Loss: 1.2492
-2025-06-07 18:40:25,643 - src.gnn_models - INFO - Epoch 150, Loss: 1.2496
-2025-06-07 18:40:26,456 - __main__ - INFO - GCN unsupervised training completed
-2025-06-07 18:40:26,486 - src.gnn_models - INFO - Epoch 000, Loss: 2.0570, Val Acc: 0.3838
-2025-06-07 18:40:26,623 - src.gnn_models - INFO - Epoch 010, Loss: 0.6285, Val Acc: 0.8167
-2025-06-07 18:40:26,739 - src.gnn_models - INFO - Epoch 020, Loss: 0.2754, Val Acc: 0.8241
-2025-06-07 18:40:26,850 - src.gnn_models - INFO - Epoch 030, Loss: 0.1828, Val Acc: 0.8106
-2025-06-07 18:40:26,966 - src.gnn_models - INFO - Epoch 040, Loss: 0.1469, Val Acc: 0.8180
-2025-06-07 18:40:27,073 - src.gnn_models - INFO - Epoch 050, Loss: 0.0920, Val Acc: 0.8081
-2025-06-07 18:40:27,181 - src.gnn_models - INFO - Epoch 060, Loss: 0.0823, Val Acc: 0.8069
-2025-06-07 18:40:27,296 - src.gnn_models - INFO - Epoch 070, Loss: 0.0759, Val Acc: 0.8057
-2025-06-07 18:40:27,406 - src.gnn_models - INFO - Epoch 080, Loss: 0.0710, Val Acc: 0.7934
-2025-06-07 18:40:27,515 - src.gnn_models - INFO - Epoch 090, Loss: 0.0690, Val Acc: 0.7934
-2025-06-07 18:40:27,625 - src.gnn_models - INFO - Epoch 100, Loss: 0.0608, Val Acc: 0.7909
-2025-06-07 18:40:27,734 - src.gnn_models - INFO - Epoch 110, Loss: 0.0580, Val Acc: 0.7909
-2025-06-07 18:40:27,846 - src.gnn_models - INFO - Epoch 120, Loss: 0.0478, Val Acc: 0.7798
-2025-06-07 18:40:27,955 - src.gnn_models - INFO - Epoch 130, Loss: 0.0480, Val Acc: 0.7798
-2025-06-07 18:40:28,064 - src.gnn_models - INFO - Epoch 140, Loss: 0.0469, Val Acc: 0.7872
-2025-06-07 18:40:28,174 - src.gnn_models - INFO - Epoch 150, Loss: 0.0398, Val Acc: 0.7835
-2025-06-07 18:40:28,282 - src.gnn_models - INFO - Epoch 160, Loss: 0.0390, Val Acc: 0.7835
-2025-06-07 18:40:28,392 - src.gnn_models - INFO - Epoch 170, Loss: 0.0479, Val Acc: 0.7749
-2025-06-07 18:40:28,504 - src.gnn_models - INFO - Epoch 180, Loss: 0.0434, Val Acc: 0.7786
-2025-06-07 18:40:28,612 - src.gnn_models - INFO - Epoch 190, Loss: 0.0328, Val Acc: 0.7761
-2025-06-07 18:40:28,711 - __main__ - INFO - GCN semi-supervised training completed
-2025-06-07 18:40:28,711 - __main__ - INFO - Training SAGE model...
-2025-06-07 18:40:28,762 - src.gnn_models - INFO - Epoch 000, Loss: 1.3944
-2025-06-07 18:40:29,941 - src.gnn_models - INFO - Epoch 050, Loss: 1.2667
-2025-06-07 18:40:31,026 - src.gnn_models - INFO - Epoch 100, Loss: 1.2532
-2025-06-07 18:40:32,160 - src.gnn_models - INFO - Epoch 150, Loss: 1.2490
-2025-06-07 18:40:33,308 - __main__ - INFO - SAGE unsupervised training completed
-2025-06-07 18:40:33,347 - src.gnn_models - INFO - Epoch 000, Loss: 2.1359, Val Acc: 0.2226
-2025-06-07 18:40:33,567 - src.gnn_models - INFO - Epoch 010, Loss: 0.5517, Val Acc: 0.7934
-2025-06-07 18:40:33,762 - src.gnn_models - INFO - Epoch 020, Loss: 0.1912, Val Acc: 0.7995
-2025-06-07 18:40:33,958 - src.gnn_models - INFO - Epoch 030, Loss: 0.0836, Val Acc: 0.7921
-2025-06-07 18:40:34,147 - src.gnn_models - INFO - Epoch 040, Loss: 0.0499, Val Acc: 0.7847
-2025-06-07 18:40:34,338 - src.gnn_models - INFO - Epoch 050, Loss: 0.0300, Val Acc: 0.7798
-2025-06-07 18:40:34,540 - src.gnn_models - INFO - Epoch 060, Loss: 0.0288, Val Acc: 0.7774
-2025-06-07 18:40:34,772 - src.gnn_models - INFO - Epoch 070, Loss: 0.0153, Val Acc: 0.7811
-2025-06-07 18:40:34,991 - src.gnn_models - INFO - Epoch 080, Loss: 0.0188, Val Acc: 0.7847
-2025-06-07 18:40:35,195 - src.gnn_models - INFO - Epoch 090, Loss: 0.0197, Val Acc: 0.7847
-2025-06-07 18:40:35,386 - src.gnn_models - INFO - Epoch 100, Loss: 0.0174, Val Acc: 0.7847
-2025-06-07 18:40:35,579 - src.gnn_models - INFO - Epoch 110, Loss: 0.0174, Val Acc: 0.7909
-2025-06-07 18:40:35,769 - src.gnn_models - INFO - Epoch 120, Loss: 0.0107, Val Acc: 0.7811
-2025-06-07 18:40:35,960 - src.gnn_models - INFO - Epoch 130, Loss: 0.0137, Val Acc: 0.7847
-2025-06-07 18:40:36,155 - src.gnn_models - INFO - Epoch 140, Loss: 0.0160, Val Acc: 0.7798
-2025-06-07 18:40:36,374 - src.gnn_models - INFO - Epoch 150, Loss: 0.0136, Val Acc: 0.7798
-2025-06-07 18:40:36,594 - src.gnn_models - INFO - Epoch 160, Loss: 0.0127, Val Acc: 0.7823
-2025-06-07 18:40:36,787 - src.gnn_models - INFO - Epoch 170, Loss: 0.0139, Val Acc: 0.7798
-2025-06-07 18:40:36,991 - src.gnn_models - INFO - Epoch 180, Loss: 0.0120, Val Acc: 0.7786
-2025-06-07 18:40:37,182 - src.gnn_models - INFO - Epoch 190, Loss: 0.0068, Val Acc: 0.7724
-2025-06-07 18:40:37,360 - __main__ - INFO - SAGE semi-supervised training completed
-2025-06-07 18:40:37,360 - __main__ - INFO - Training GAT model...
-2025-06-07 18:40:37,412 - src.gnn_models - INFO - Epoch 000, Loss: 1.3460
-2025-06-07 18:40:38,306 - src.gnn_models - INFO - Epoch 050, Loss: 1.2586
-2025-06-07 18:40:39,202 - src.gnn_models - INFO - Epoch 100, Loss: 1.2470
-2025-06-07 18:40:40,165 - src.gnn_models - INFO - Epoch 150, Loss: 1.2379
-2025-06-07 18:40:41,174 - __main__ - INFO - GAT unsupervised training completed
-2025-06-07 18:40:41,204 - src.gnn_models - INFO - Epoch 000, Loss: 2.0965, Val Acc: 0.2509
-2025-06-07 18:40:41,383 - src.gnn_models - INFO - Epoch 010, Loss: 0.6459, Val Acc: 0.8032
-2025-06-07 18:40:41,536 - src.gnn_models - INFO - Epoch 020, Loss: 0.2637, Val Acc: 0.8352
-2025-06-07 18:40:41,686 - src.gnn_models - INFO - Epoch 030, Loss: 0.1596, Val Acc: 0.8327
-2025-06-07 18:40:41,844 - src.gnn_models - INFO - Epoch 040, Loss: 0.1008, Val Acc: 0.8364
-2025-06-07 18:40:42,002 - src.gnn_models - INFO - Epoch 050, Loss: 0.0842, Val Acc: 0.8290
-2025-06-07 18:40:42,154 - src.gnn_models - INFO - Epoch 060, Loss: 0.0702, Val Acc: 0.8241
-2025-06-07 18:40:42,309 - src.gnn_models - INFO - Epoch 070, Loss: 0.0531, Val Acc: 0.8253
-2025-06-07 18:40:42,464 - src.gnn_models - INFO - Epoch 080, Loss: 0.0467, Val Acc: 0.8241
-2025-06-07 18:40:42,615 - src.gnn_models - INFO - Epoch 090, Loss: 0.0427, Val Acc: 0.8229
-2025-06-07 18:40:42,771 - src.gnn_models - INFO - Epoch 100, Loss: 0.0267, Val Acc: 0.8204
-2025-06-07 18:40:42,926 - src.gnn_models - INFO - Epoch 110, Loss: 0.0379, Val Acc: 0.8204
-2025-06-07 18:40:43,087 - src.gnn_models - INFO - Epoch 120, Loss: 0.0289, Val Acc: 0.8278
-2025-06-07 18:40:43,241 - src.gnn_models - INFO - Epoch 130, Loss: 0.0310, Val Acc: 0.8229
-2025-06-07 18:40:43,396 - src.gnn_models - INFO - Epoch 140, Loss: 0.0271, Val Acc: 0.8266
-2025-06-07 18:40:43,550 - src.gnn_models - INFO - Epoch 150, Loss: 0.0261, Val Acc: 0.8167
-2025-06-07 18:40:43,702 - src.gnn_models - INFO - Epoch 160, Loss: 0.0252, Val Acc: 0.8216
-2025-06-07 18:40:43,856 - src.gnn_models - INFO - Epoch 170, Loss: 0.0270, Val Acc: 0.8180
-2025-06-07 18:40:44,006 - src.gnn_models - INFO - Epoch 180, Loss: 0.0236, Val Acc: 0.8118
-2025-06-07 18:40:44,160 - src.gnn_models - INFO - Epoch 190, Loss: 0.0254, Val Acc: 0.8130
-2025-06-07 18:40:44,300 - __main__ - INFO - GAT semi-supervised training completed
-2025-06-07 18:40:44,300 - __main__ - INFO - Evaluating results...
-2025-06-07 18:40:45,719 - src.neo4j_manager - INFO - Updated 2708 nodes with GNN predictions
-2025-06-07 18:40:45,730 - __main__ - INFO - Best GNN method (gat_semi_supervised) results written to Neo4j
-2025-06-07 18:40:45,730 - __main__ - INFO - Creating visualizations...
-2025-06-07 18:41:14,078 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
-2025-06-07 18:41:14,126 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
-2025-06-07 18:42:11,977 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
-2025-06-07 18:42:40,076 - src.visualization - INFO - Results summary saved to /Users/emre/code/projects/community-detection/results
-2025-06-07 18:42:40,083 - src.neo4j_manager - INFO - Graph projection cleaned up
-2025-06-07 18:42:40,086 - neo4j.notifications - WARNING - Received notification from DBMS server: {severity: WARNING} {code: Neo.ClientNotification.Statement.FeatureDeprecationWarning} {category: DEPRECATION} {title: This feature is deprecated and will be removed in future versions.} {description: The query used a deprecated field from a procedure. ('schema' returned by 'gds.graph.drop' is deprecated.)} {position: line: 1, column: 1, offset: 0} for query: "CALL gds.graph.drop('cora-graph')"
-2025-06-07 18:42:40,086 - src.neo4j_manager - INFO - Neo4j connection closed
-2025-06-07 18:42:40,087 - __main__ - INFO - === FINAL RESULTS ===
-2025-06-07 18:42:40,087 - __main__ - INFO - Louvain:
-2025-06-07 18:42:40,087 - __main__ - INFO -   ARI: 0.2585
-2025-06-07 18:42:40,087 - __main__ - INFO -   NMI: 0.4507
-2025-06-07 18:42:40,087 - __main__ - INFO -   Communities: 103
-2025-06-07 18:42:40,087 - __main__ - INFO - Label_Propagation:
-2025-06-07 18:42:40,087 - __main__ - INFO -   ARI: 0.1464
-2025-06-07 18:42:40,087 - __main__ - INFO -   NMI: 0.3830
-2025-06-07 18:42:40,087 - __main__ - INFO -   Communities: 224
-2025-06-07 18:42:40,087 - __main__ - INFO - gcn_unsupervised:
-2025-06-07 18:42:40,087 - __main__ - INFO -   ARI: 0.0796
-2025-06-07 18:42:40,087 - __main__ - INFO -   NMI: 0.3636
-2025-06-07 18:42:40,087 - __main__ - INFO -   Communities: 103
-2025-06-07 18:42:40,087 - __main__ - INFO - gcn_semi_supervised:
-2025-06-07 18:42:40,087 - __main__ - INFO -   ARI: 0.8535
-2025-06-07 18:42:40,087 - __main__ - INFO -   NMI: 0.8123
-2025-06-07 18:42:40,087 - __main__ - INFO -   Communities: 7
-2025-06-07 18:42:40,087 - __main__ - INFO - sage_unsupervised:
-2025-06-07 18:42:40,087 - __main__ - INFO -   ARI: 0.0732
-2025-06-07 18:42:40,087 - __main__ - INFO -   NMI: 0.3661
-2025-06-07 18:42:40,087 - __main__ - INFO -   Communities: 103
-2025-06-07 18:42:40,087 - __main__ - INFO - sage_semi_supervised:
-2025-06-07 18:42:40,087 - __main__ - INFO -   ARI: 0.8516
-2025-06-07 18:42:40,087 - __main__ - INFO -   NMI: 0.8125
-2025-06-07 18:42:40,087 - __main__ - INFO -   Communities: 7
-2025-06-07 18:42:40,087 - __main__ - INFO - gat_unsupervised:
-2025-06-07 18:42:40,087 - __main__ - INFO -   ARI: 0.0791
-2025-06-07 18:42:40,087 - __main__ - INFO -   NMI: 0.3857
-2025-06-07 18:42:40,087 - __main__ - INFO -   Communities: 103
-2025-06-07 18:42:40,087 - __main__ - INFO - gat_semi_supervised:
-2025-06-07 18:42:40,087 - __main__ - INFO -   ARI: 0.8797
-2025-06-07 18:42:40,087 - __main__ - INFO -   NMI: 0.8399
-2025-06-07 18:42:40,087 - __main__ - INFO -   Communities: 7
-2025-06-07 18:42:40,087 - __main__ - INFO - Community Detection project completed successfully!
+2025-07-03 12:22:31,926 - __main__ - INFO - Starting Community Detection project...
+2025-07-03 12:22:31,926 - __main__ - INFO - Setting up Cora dataset...
+2025-07-03 12:22:31,926 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 12:22:31,994 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 12:22:32,404 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/ege-uni/community-detection-graph/data/cora/cora.content and /Users/emre/code/projects/ege-uni/community-detection-graph/data/cora/cora.cites
+2025-07-03 12:22:32,405 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 12:22:32,471 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 12:22:32,473 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
+2025-07-03 12:22:32,500 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
+2025-07-03 12:22:32,500 - __main__ - INFO - Running classical community detection algorithms...
+2025-07-03 12:22:32,500 - __main__ - INFO - Loading data into Neo4j...
+2025-07-03 12:22:32,509 - src.neo4j_manager - INFO - Database cleared
+2025-07-03 12:22:35,837 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 12:22:35,837 - __main__ - INFO - Running Louvain algorithm...
+2025-07-03 12:22:35,840 - src.neo4j_manager - INFO - No existing cora-graph projection to drop
+2025-07-03 12:22:37,393 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=103 modularities=[0.5385565555805529, 0.7726636466306062, 0.8189921768786304, 0.8201552002998165]>
+2025-07-03 12:22:37,393 - __main__ - INFO - Running Label Propagation algorithm...
+2025-07-03 12:22:37,412 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
+2025-07-03 12:22:37,412 - __main__ - INFO - Classical algorithms completed
+2025-07-03 12:22:37,531 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
+2025-07-03 12:22:37,531 - __main__ - INFO - Preparing PyTorch data...
+2025-07-03 12:22:37,531 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 12:22:37,597 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 12:22:37,642 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
+2025-07-03 12:22:37,677 - __main__ - INFO - PyTorch data prepared: Data(x=[2708, 1433], edge_index=[2, 5429], y=[2708], paper_ids=[2708], louvain_communities=[2708], lpa_communities=[2708])
+2025-07-03 12:22:37,677 - __main__ - INFO - Running GNN experiments...
+2025-07-03 12:22:37,677 - __main__ - INFO - Using device: cpu
+2025-07-03 12:22:37,684 - __main__ - INFO - Number of communities - Louvain: 103, LPA: 224, True classes: 7
+2025-07-03 12:22:37,684 - __main__ - INFO - Training GCN model...
+2025-07-03 12:22:37,756 - src.gnn_models - INFO - Epoch 000, Loss: 1.3461
+2025-07-03 12:22:38,197 - src.gnn_models - INFO - Epoch 050, Loss: 1.2624
+2025-07-03 12:22:38,631 - src.gnn_models - INFO - Epoch 100, Loss: 1.2462
+2025-07-03 12:22:39,066 - src.gnn_models - INFO - Epoch 150, Loss: 1.2511
+2025-07-03 12:22:39,564 - __main__ - INFO - GCN unsupervised training completed
+2025-07-03 12:22:39,584 - src.gnn_models - INFO - Epoch 000, Loss: 2.1333, Val Acc: 0.3727
+2025-07-03 12:22:39,678 - src.gnn_models - INFO - Epoch 010, Loss: 0.6847, Val Acc: 0.7946
+2025-07-03 12:22:39,769 - src.gnn_models - INFO - Epoch 020, Loss: 0.2938, Val Acc: 0.8253
+2025-07-03 12:22:39,840 - src.gnn_models - INFO - Epoch 030, Loss: 0.1754, Val Acc: 0.8167
+2025-07-03 12:22:39,909 - src.gnn_models - INFO - Epoch 040, Loss: 0.1453, Val Acc: 0.8032
+2025-07-03 12:22:39,979 - src.gnn_models - INFO - Epoch 050, Loss: 0.1220, Val Acc: 0.8044
+2025-07-03 12:22:40,051 - src.gnn_models - INFO - Epoch 060, Loss: 0.0877, Val Acc: 0.8081
+2025-07-03 12:22:40,122 - src.gnn_models - INFO - Epoch 070, Loss: 0.0833, Val Acc: 0.8020
+2025-07-03 12:22:40,192 - src.gnn_models - INFO - Epoch 080, Loss: 0.0896, Val Acc: 0.7983
+2025-07-03 12:22:40,262 - src.gnn_models - INFO - Epoch 090, Loss: 0.0748, Val Acc: 0.7983
+2025-07-03 12:22:40,331 - src.gnn_models - INFO - Epoch 100, Loss: 0.0691, Val Acc: 0.7921
+2025-07-03 12:22:40,401 - src.gnn_models - INFO - Epoch 110, Loss: 0.0580, Val Acc: 0.7872
+2025-07-03 12:22:40,471 - src.gnn_models - INFO - Epoch 120, Loss: 0.0566, Val Acc: 0.7884
+2025-07-03 12:22:40,541 - src.gnn_models - INFO - Epoch 130, Loss: 0.0427, Val Acc: 0.7823
+2025-07-03 12:22:40,611 - src.gnn_models - INFO - Epoch 140, Loss: 0.0419, Val Acc: 0.7835
+2025-07-03 12:22:40,681 - src.gnn_models - INFO - Epoch 150, Loss: 0.0483, Val Acc: 0.7860
+2025-07-03 12:22:40,751 - src.gnn_models - INFO - Epoch 160, Loss: 0.0357, Val Acc: 0.7872
+2025-07-03 12:22:40,822 - src.gnn_models - INFO - Epoch 170, Loss: 0.0394, Val Acc: 0.7921
+2025-07-03 12:22:40,891 - src.gnn_models - INFO - Epoch 180, Loss: 0.0465, Val Acc: 0.7983
+2025-07-03 12:22:40,962 - src.gnn_models - INFO - Epoch 190, Loss: 0.0384, Val Acc: 0.7921
+2025-07-03 12:22:41,026 - __main__ - INFO - GCN semi-supervised training completed
+2025-07-03 12:22:41,026 - __main__ - INFO - Training SAGE model...
+2025-07-03 12:22:41,058 - src.gnn_models - INFO - Epoch 000, Loss: 1.3942
+2025-07-03 12:22:41,654 - src.gnn_models - INFO - Epoch 050, Loss: 1.2697
+2025-07-03 12:22:42,246 - src.gnn_models - INFO - Epoch 100, Loss: 1.2532
+2025-07-03 12:22:42,843 - src.gnn_models - INFO - Epoch 150, Loss: 1.2429
+2025-07-03 12:22:43,463 - __main__ - INFO - SAGE unsupervised training completed
+2025-07-03 12:22:43,484 - src.gnn_models - INFO - Epoch 000, Loss: 2.1262, Val Acc: 0.3530
+2025-07-03 12:22:43,616 - src.gnn_models - INFO - Epoch 010, Loss: 0.5509, Val Acc: 0.7946
+2025-07-03 12:22:43,730 - src.gnn_models - INFO - Epoch 020, Loss: 0.1910, Val Acc: 0.8204
+2025-07-03 12:22:43,835 - src.gnn_models - INFO - Epoch 030, Loss: 0.0743, Val Acc: 0.7983
+2025-07-03 12:22:43,936 - src.gnn_models - INFO - Epoch 040, Loss: 0.0465, Val Acc: 0.7909
+2025-07-03 12:22:44,039 - src.gnn_models - INFO - Epoch 050, Loss: 0.0318, Val Acc: 0.7835
+2025-07-03 12:22:44,142 - src.gnn_models - INFO - Epoch 060, Loss: 0.0291, Val Acc: 0.7811
+2025-07-03 12:22:44,244 - src.gnn_models - INFO - Epoch 070, Loss: 0.0152, Val Acc: 0.7921
+2025-07-03 12:22:44,348 - src.gnn_models - INFO - Epoch 080, Loss: 0.0184, Val Acc: 0.7897
+2025-07-03 12:22:44,449 - src.gnn_models - INFO - Epoch 090, Loss: 0.0194, Val Acc: 0.7823
+2025-07-03 12:22:44,552 - src.gnn_models - INFO - Epoch 100, Loss: 0.0168, Val Acc: 0.7847
+2025-07-03 12:22:44,654 - src.gnn_models - INFO - Epoch 110, Loss: 0.0192, Val Acc: 0.7786
+2025-07-03 12:22:44,759 - src.gnn_models - INFO - Epoch 120, Loss: 0.0091, Val Acc: 0.7811
+2025-07-03 12:22:44,862 - src.gnn_models - INFO - Epoch 130, Loss: 0.0150, Val Acc: 0.7786
+2025-07-03 12:22:44,964 - src.gnn_models - INFO - Epoch 140, Loss: 0.0130, Val Acc: 0.7724
+2025-07-03 12:22:45,068 - src.gnn_models - INFO - Epoch 150, Loss: 0.0086, Val Acc: 0.7737
+2025-07-03 12:22:45,170 - src.gnn_models - INFO - Epoch 160, Loss: 0.0133, Val Acc: 0.7774
+2025-07-03 12:22:45,273 - src.gnn_models - INFO - Epoch 170, Loss: 0.0151, Val Acc: 0.7798
+2025-07-03 12:22:45,378 - src.gnn_models - INFO - Epoch 180, Loss: 0.0111, Val Acc: 0.7811
+2025-07-03 12:22:45,479 - src.gnn_models - INFO - Epoch 190, Loss: 0.0088, Val Acc: 0.7835
+2025-07-03 12:22:45,573 - __main__ - INFO - SAGE semi-supervised training completed
+2025-07-03 12:22:45,573 - __main__ - INFO - Training GAT model...
+2025-07-03 12:22:45,607 - src.gnn_models - INFO - Epoch 000, Loss: 1.3450
+2025-07-03 12:22:46,184 - src.gnn_models - INFO - Epoch 050, Loss: 1.2538
+2025-07-03 12:22:46,761 - src.gnn_models - INFO - Epoch 100, Loss: 1.2442
+2025-07-03 12:22:47,341 - src.gnn_models - INFO - Epoch 150, Loss: 1.2387
+2025-07-03 12:22:47,943 - __main__ - INFO - GAT unsupervised training completed
+2025-07-03 12:22:47,960 - src.gnn_models - INFO - Epoch 000, Loss: 2.1536, Val Acc: 0.3358
+2025-07-03 12:22:48,086 - src.gnn_models - INFO - Epoch 010, Loss: 0.6634, Val Acc: 0.8106
+2025-07-03 12:22:48,197 - src.gnn_models - INFO - Epoch 020, Loss: 0.2759, Val Acc: 0.8352
+2025-07-03 12:22:48,296 - src.gnn_models - INFO - Epoch 030, Loss: 0.1702, Val Acc: 0.8327
+2025-07-03 12:22:48,396 - src.gnn_models - INFO - Epoch 040, Loss: 0.1028, Val Acc: 0.8253
+2025-07-03 12:22:48,496 - src.gnn_models - INFO - Epoch 050, Loss: 0.0858, Val Acc: 0.8253
+2025-07-03 12:22:48,595 - src.gnn_models - INFO - Epoch 060, Loss: 0.0720, Val Acc: 0.8143
+2025-07-03 12:22:48,696 - src.gnn_models - INFO - Epoch 070, Loss: 0.0595, Val Acc: 0.8216
+2025-07-03 12:22:48,795 - src.gnn_models - INFO - Epoch 080, Loss: 0.0478, Val Acc: 0.8167
+2025-07-03 12:22:48,893 - src.gnn_models - INFO - Epoch 090, Loss: 0.0455, Val Acc: 0.8192
+2025-07-03 12:22:48,992 - src.gnn_models - INFO - Epoch 100, Loss: 0.0397, Val Acc: 0.8180
+2025-07-03 12:22:49,090 - src.gnn_models - INFO - Epoch 110, Loss: 0.0417, Val Acc: 0.8130
+2025-07-03 12:22:49,192 - src.gnn_models - INFO - Epoch 120, Loss: 0.0375, Val Acc: 0.8180
+2025-07-03 12:22:49,291 - src.gnn_models - INFO - Epoch 130, Loss: 0.0356, Val Acc: 0.8167
+2025-07-03 12:22:49,391 - src.gnn_models - INFO - Epoch 140, Loss: 0.0316, Val Acc: 0.8118
+2025-07-03 12:22:49,490 - src.gnn_models - INFO - Epoch 150, Loss: 0.0227, Val Acc: 0.8143
+2025-07-03 12:22:49,592 - src.gnn_models - INFO - Epoch 160, Loss: 0.0220, Val Acc: 0.8093
+2025-07-03 12:22:49,692 - src.gnn_models - INFO - Epoch 170, Loss: 0.0268, Val Acc: 0.8143
+2025-07-03 12:22:49,791 - src.gnn_models - INFO - Epoch 180, Loss: 0.0190, Val Acc: 0.8155
+2025-07-03 12:22:49,891 - src.gnn_models - INFO - Epoch 190, Loss: 0.0172, Val Acc: 0.8081
+2025-07-03 12:22:49,982 - __main__ - INFO - GAT semi-supervised training completed
+2025-07-03 12:22:49,982 - __main__ - INFO - Evaluating results...
+2025-07-03 12:22:50,955 - src.neo4j_manager - INFO - Updated 2708 nodes with GNN predictions
+2025-07-03 12:22:50,960 - __main__ - INFO - Best GNN method (gat_semi_supervised) results written to Neo4j
+2025-07-03 12:22:50,961 - __main__ - INFO - Creating visualizations...
+2025-07-03 12:22:58,028 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
+2025-07-03 12:22:58,063 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
+2025-07-03 12:23:33,781 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
+2025-07-03 12:23:51,359 - src.visualization - INFO - Results summary saved to /Users/emre/code/projects/ege-uni/community-detection-graph/results
+2025-07-03 12:23:51,363 - src.neo4j_manager - INFO - Graph projection cleaned up
+2025-07-03 12:23:51,367 - neo4j.notifications - WARNING - Received notification from DBMS server: {severity: WARNING} {code: Neo.ClientNotification.Statement.FeatureDeprecationWarning} {category: DEPRECATION} {title: This feature is deprecated and will be removed in future versions.} {description: The query used a deprecated field from a procedure. ('schema' returned by 'gds.graph.drop' is deprecated.)} {position: line: 1, column: 1, offset: 0} for query: "CALL gds.graph.drop('cora-graph')"
+2025-07-03 12:23:51,367 - src.neo4j_manager - INFO - Neo4j connection closed
+2025-07-03 12:23:51,367 - __main__ - INFO - === FINAL RESULTS ===
+2025-07-03 12:23:51,367 - __main__ - INFO - Louvain:
+2025-07-03 12:23:51,367 - __main__ - INFO -   ARI: 0.2302
+2025-07-03 12:23:51,367 - __main__ - INFO -   NMI: 0.4493
+2025-07-03 12:23:51,367 - __main__ - INFO -   Communities: 103
+2025-07-03 12:23:51,367 - __main__ - INFO - Label_Propagation:
+2025-07-03 12:23:51,367 - __main__ - INFO -   ARI: 0.1464
+2025-07-03 12:23:51,367 - __main__ - INFO -   NMI: 0.3830
+2025-07-03 12:23:51,367 - __main__ - INFO -   Communities: 224
+2025-07-03 12:23:51,367 - __main__ - INFO - gcn_unsupervised:
+2025-07-03 12:23:51,367 - __main__ - INFO -   ARI: 0.0804
+2025-07-03 12:23:51,367 - __main__ - INFO -   NMI: 0.3698
+2025-07-03 12:23:51,367 - __main__ - INFO -   Communities: 103
+2025-07-03 12:23:51,367 - __main__ - INFO - gcn_semi_supervised:
+2025-07-03 12:23:51,367 - __main__ - INFO -   ARI: 0.8577
+2025-07-03 12:23:51,367 - __main__ - INFO -   NMI: 0.8179
+2025-07-03 12:23:51,367 - __main__ - INFO -   Communities: 7
+2025-07-03 12:23:51,367 - __main__ - INFO - sage_unsupervised:
+2025-07-03 12:23:51,367 - __main__ - INFO -   ARI: 0.0712
+2025-07-03 12:23:51,367 - __main__ - INFO -   NMI: 0.3620
+2025-07-03 12:23:51,367 - __main__ - INFO -   Communities: 103
+2025-07-03 12:23:51,367 - __main__ - INFO - sage_semi_supervised:
+2025-07-03 12:23:51,367 - __main__ - INFO -   ARI: 0.8498
+2025-07-03 12:23:51,367 - __main__ - INFO -   NMI: 0.8128
+2025-07-03 12:23:51,367 - __main__ - INFO -   Communities: 7
+2025-07-03 12:23:51,368 - __main__ - INFO - gat_unsupervised:
+2025-07-03 12:23:51,368 - __main__ - INFO -   ARI: 0.0788
+2025-07-03 12:23:51,368 - __main__ - INFO -   NMI: 0.3778
+2025-07-03 12:23:51,368 - __main__ - INFO -   Communities: 103
+2025-07-03 12:23:51,368 - __main__ - INFO - gat_semi_supervised:
+2025-07-03 12:23:51,368 - __main__ - INFO -   ARI: 0.8758
+2025-07-03 12:23:51,368 - __main__ - INFO -   NMI: 0.8367
+2025-07-03 12:23:51,368 - __main__ - INFO -   Communities: 7
+2025-07-03 12:23:51,368 - __main__ - INFO - Community Detection project completed successfully!
+2025-07-03 12:46:43,079 - __main__ - INFO - Starting Community Detection project...
+2025-07-03 12:46:43,080 - __main__ - INFO - Setting up Cora dataset...
+2025-07-03 12:46:43,080 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 12:46:43,151 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 12:46:43,563 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/ege-uni/community-detection-graph/data/cora/cora.content and /Users/emre/code/projects/ege-uni/community-detection-graph/data/cora/cora.cites
+2025-07-03 12:46:43,564 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 12:46:43,622 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 12:46:43,624 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
+2025-07-03 12:46:43,640 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
+2025-07-03 12:46:43,640 - __main__ - INFO - Running classical community detection algorithms...
+2025-07-03 12:46:43,640 - __main__ - INFO - Loading data into Neo4j...
+2025-07-03 12:46:43,648 - src.neo4j_manager - INFO - Database cleared
+2025-07-03 12:46:46,956 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 12:46:46,956 - __main__ - INFO - Running Louvain algorithm...
+2025-07-03 12:46:46,959 - src.neo4j_manager - INFO - No existing cora-graph projection to drop
+2025-07-03 12:46:48,794 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=105 modularities=[0.5629326328208608, 0.7799029322107545, 0.8186131314671105, 0.8207076695048365]>
+2025-07-03 12:46:48,794 - __main__ - INFO - Running Label Propagation algorithm...
+2025-07-03 12:46:48,817 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
+2025-07-03 12:46:48,818 - __main__ - INFO - Classical algorithms completed
+2025-07-03 12:46:48,921 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
+2025-07-03 12:46:48,922 - __main__ - INFO - Preparing PyTorch data...
+2025-07-03 12:46:48,922 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 12:46:48,980 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 12:46:49,023 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
+2025-07-03 12:46:49,057 - __main__ - INFO - PyTorch data prepared: Data(x=[2708, 1433], edge_index=[2, 5429], y=[2708], paper_ids=[2708], louvain_communities=[2708], lpa_communities=[2708])
+2025-07-03 12:46:49,057 - __main__ - INFO - Running GNN experiments...
+2025-07-03 12:46:49,057 - __main__ - INFO - Using device: cpu
+2025-07-03 12:46:49,060 - __main__ - INFO - Number of communities - Louvain: 105, LPA: 224, True classes: 7
+2025-07-03 12:46:49,060 - __main__ - INFO - Training GCN model...
+2025-07-03 12:46:49,120 - src.gnn_models - INFO - Epoch 000, Loss: 1.3475
+2025-07-03 12:46:49,557 - src.gnn_models - INFO - Epoch 050, Loss: 1.2612
+2025-07-03 12:46:49,986 - src.gnn_models - INFO - Epoch 100, Loss: 1.2502
+2025-07-03 12:46:50,422 - src.gnn_models - INFO - Epoch 150, Loss: 1.2420
+2025-07-03 12:46:50,915 - __main__ - INFO - GCN unsupervised training completed
+2025-07-03 12:46:50,934 - src.gnn_models - INFO - Epoch 000, Loss: 2.0925, Val Acc: 0.3727
+2025-07-03 12:46:51,025 - src.gnn_models - INFO - Epoch 010, Loss: 0.6453, Val Acc: 0.8266
+2025-07-03 12:46:51,117 - src.gnn_models - INFO - Epoch 020, Loss: 0.2877, Val Acc: 0.8401
+2025-07-03 12:46:51,187 - src.gnn_models - INFO - Epoch 030, Loss: 0.2000, Val Acc: 0.8241
+2025-07-03 12:46:51,258 - src.gnn_models - INFO - Epoch 040, Loss: 0.1349, Val Acc: 0.8130
+2025-07-03 12:46:51,329 - src.gnn_models - INFO - Epoch 050, Loss: 0.1139, Val Acc: 0.8093
+2025-07-03 12:46:51,398 - src.gnn_models - INFO - Epoch 060, Loss: 0.0902, Val Acc: 0.8143
+2025-07-03 12:46:51,468 - src.gnn_models - INFO - Epoch 070, Loss: 0.0793, Val Acc: 0.8032
+2025-07-03 12:46:51,539 - src.gnn_models - INFO - Epoch 080, Loss: 0.0669, Val Acc: 0.8007
+2025-07-03 12:46:51,608 - src.gnn_models - INFO - Epoch 090, Loss: 0.0582, Val Acc: 0.7934
+2025-07-03 12:46:51,678 - src.gnn_models - INFO - Epoch 100, Loss: 0.0511, Val Acc: 0.7946
+2025-07-03 12:46:51,749 - src.gnn_models - INFO - Epoch 110, Loss: 0.0512, Val Acc: 0.7983
+2025-07-03 12:46:51,820 - src.gnn_models - INFO - Epoch 120, Loss: 0.0505, Val Acc: 0.7921
+2025-07-03 12:46:51,889 - src.gnn_models - INFO - Epoch 130, Loss: 0.0435, Val Acc: 0.7921
+2025-07-03 12:46:51,960 - src.gnn_models - INFO - Epoch 140, Loss: 0.0461, Val Acc: 0.7921
+2025-07-03 12:46:52,031 - src.gnn_models - INFO - Epoch 150, Loss: 0.0408, Val Acc: 0.7860
+2025-07-03 12:46:52,100 - src.gnn_models - INFO - Epoch 160, Loss: 0.0431, Val Acc: 0.7835
+2025-07-03 12:46:52,170 - src.gnn_models - INFO - Epoch 170, Loss: 0.0304, Val Acc: 0.7884
+2025-07-03 12:46:52,242 - src.gnn_models - INFO - Epoch 180, Loss: 0.0366, Val Acc: 0.7897
+2025-07-03 12:46:52,313 - src.gnn_models - INFO - Epoch 190, Loss: 0.0353, Val Acc: 0.7884
+2025-07-03 12:46:52,375 - __main__ - INFO - GCN semi-supervised training completed
+2025-07-03 12:46:52,375 - __main__ - INFO - Training SAGE model...
+2025-07-03 12:46:52,408 - src.gnn_models - INFO - Epoch 000, Loss: 1.3914
+2025-07-03 12:46:53,006 - src.gnn_models - INFO - Epoch 050, Loss: 1.2679
+2025-07-03 12:46:53,599 - src.gnn_models - INFO - Epoch 100, Loss: 1.2549
+2025-07-03 12:46:54,196 - src.gnn_models - INFO - Epoch 150, Loss: 1.2468
+2025-07-03 12:46:54,809 - __main__ - INFO - SAGE unsupervised training completed
+2025-07-03 12:46:54,830 - src.gnn_models - INFO - Epoch 000, Loss: 2.1101, Val Acc: 0.1255
+2025-07-03 12:46:54,963 - src.gnn_models - INFO - Epoch 010, Loss: 0.5335, Val Acc: 0.8007
+2025-07-03 12:46:55,075 - src.gnn_models - INFO - Epoch 020, Loss: 0.1794, Val Acc: 0.8093
+2025-07-03 12:46:55,179 - src.gnn_models - INFO - Epoch 030, Loss: 0.0800, Val Acc: 0.7983
+2025-07-03 12:46:55,283 - src.gnn_models - INFO - Epoch 040, Loss: 0.0586, Val Acc: 0.7897
+2025-07-03 12:46:55,386 - src.gnn_models - INFO - Epoch 050, Loss: 0.0351, Val Acc: 0.7860
+2025-07-03 12:46:55,492 - src.gnn_models - INFO - Epoch 060, Loss: 0.0252, Val Acc: 0.7823
+2025-07-03 12:46:55,596 - src.gnn_models - INFO - Epoch 070, Loss: 0.0258, Val Acc: 0.7897
+2025-07-03 12:46:55,701 - src.gnn_models - INFO - Epoch 080, Loss: 0.0216, Val Acc: 0.7934
+2025-07-03 12:46:55,806 - src.gnn_models - INFO - Epoch 090, Loss: 0.0135, Val Acc: 0.7934
+2025-07-03 12:46:55,911 - src.gnn_models - INFO - Epoch 100, Loss: 0.0140, Val Acc: 0.7934
+2025-07-03 12:46:56,014 - src.gnn_models - INFO - Epoch 110, Loss: 0.0178, Val Acc: 0.7847
+2025-07-03 12:46:56,117 - src.gnn_models - INFO - Epoch 120, Loss: 0.0238, Val Acc: 0.7823
+2025-07-03 12:46:56,220 - src.gnn_models - INFO - Epoch 130, Loss: 0.0145, Val Acc: 0.7786
+2025-07-03 12:46:56,323 - src.gnn_models - INFO - Epoch 140, Loss: 0.0148, Val Acc: 0.7786
+2025-07-03 12:46:56,426 - src.gnn_models - INFO - Epoch 150, Loss: 0.0110, Val Acc: 0.7798
+2025-07-03 12:46:56,531 - src.gnn_models - INFO - Epoch 160, Loss: 0.0087, Val Acc: 0.7884
+2025-07-03 12:46:56,636 - src.gnn_models - INFO - Epoch 170, Loss: 0.0160, Val Acc: 0.7860
+2025-07-03 12:46:56,741 - src.gnn_models - INFO - Epoch 180, Loss: 0.0154, Val Acc: 0.7835
+2025-07-03 12:46:56,844 - src.gnn_models - INFO - Epoch 190, Loss: 0.0117, Val Acc: 0.7909
+2025-07-03 12:46:56,938 - __main__ - INFO - SAGE semi-supervised training completed
+2025-07-03 12:46:56,938 - __main__ - INFO - Training GAT model...
+2025-07-03 12:46:56,972 - src.gnn_models - INFO - Epoch 000, Loss: 1.3491
+2025-07-03 12:46:57,549 - src.gnn_models - INFO - Epoch 050, Loss: 1.2586
+2025-07-03 12:46:58,125 - src.gnn_models - INFO - Epoch 100, Loss: 1.2466
+2025-07-03 12:46:58,704 - src.gnn_models - INFO - Epoch 150, Loss: 1.2435
+2025-07-03 12:46:59,311 - __main__ - INFO - GAT unsupervised training completed
+2025-07-03 12:46:59,331 - src.gnn_models - INFO - Epoch 000, Loss: 2.0229, Val Acc: 0.2288
+2025-07-03 12:46:59,458 - src.gnn_models - INFO - Epoch 010, Loss: 0.6524, Val Acc: 0.7983
+2025-07-03 12:46:59,571 - src.gnn_models - INFO - Epoch 020, Loss: 0.2603, Val Acc: 0.8389
+2025-07-03 12:46:59,671 - src.gnn_models - INFO - Epoch 030, Loss: 0.1437, Val Acc: 0.8290
+2025-07-03 12:46:59,770 - src.gnn_models - INFO - Epoch 040, Loss: 0.1134, Val Acc: 0.8180
+2025-07-03 12:46:59,870 - src.gnn_models - INFO - Epoch 050, Loss: 0.0801, Val Acc: 0.8216
+2025-07-03 12:46:59,969 - src.gnn_models - INFO - Epoch 060, Loss: 0.0593, Val Acc: 0.8118
+2025-07-03 12:47:00,079 - src.gnn_models - INFO - Epoch 070, Loss: 0.0546, Val Acc: 0.8081
+2025-07-03 12:47:00,179 - src.gnn_models - INFO - Epoch 080, Loss: 0.0512, Val Acc: 0.8069
+2025-07-03 12:47:00,282 - src.gnn_models - INFO - Epoch 090, Loss: 0.0373, Val Acc: 0.8032
+2025-07-03 12:47:00,381 - src.gnn_models - INFO - Epoch 100, Loss: 0.0307, Val Acc: 0.8020
+2025-07-03 12:47:00,481 - src.gnn_models - INFO - Epoch 110, Loss: 0.0440, Val Acc: 0.8069
+2025-07-03 12:47:00,583 - src.gnn_models - INFO - Epoch 120, Loss: 0.0280, Val Acc: 0.8106
+2025-07-03 12:47:00,682 - src.gnn_models - INFO - Epoch 130, Loss: 0.0393, Val Acc: 0.8057
+2025-07-03 12:47:00,784 - src.gnn_models - INFO - Epoch 140, Loss: 0.0264, Val Acc: 0.8081
+2025-07-03 12:47:00,883 - src.gnn_models - INFO - Epoch 150, Loss: 0.0265, Val Acc: 0.8106
+2025-07-03 12:47:00,982 - src.gnn_models - INFO - Epoch 160, Loss: 0.0253, Val Acc: 0.8081
+2025-07-03 12:47:01,083 - src.gnn_models - INFO - Epoch 170, Loss: 0.0307, Val Acc: 0.8081
+2025-07-03 12:47:01,183 - src.gnn_models - INFO - Epoch 180, Loss: 0.0246, Val Acc: 0.8020
+2025-07-03 12:47:01,283 - src.gnn_models - INFO - Epoch 190, Loss: 0.0225, Val Acc: 0.8106
+2025-07-03 12:47:01,373 - __main__ - INFO - GAT semi-supervised training completed
+2025-07-03 12:47:01,373 - __main__ - INFO - Evaluating results...
+2025-07-03 12:47:02,348 - src.neo4j_manager - INFO - Updated 2708 nodes with GNN predictions
+2025-07-03 12:47:02,354 - __main__ - INFO - Best GNN method (gat_semi_supervised) results written to Neo4j
+2025-07-03 12:47:02,354 - __main__ - INFO - Creating visualizations...
+2025-07-03 13:43:27,789 - src.neo4j_manager - INFO - Neo4j connection closed
+2025-07-03 13:44:36,125 - __main__ - INFO - Starting Community Detection project...
+2025-07-03 13:44:36,125 - __main__ - INFO - Setting up Cora dataset...
+2025-07-03 13:44:36,125 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 13:44:36,184 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 13:44:36,591 - src.data_loader - INFO - Preprocessed data saved to /Users/emre/code/projects/ege-uni/community-detection-graph/data/cora/cora.content and /Users/emre/code/projects/ege-uni/community-detection-graph/data/cora/cora.cites
+2025-07-03 13:44:36,592 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 13:44:36,651 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 13:44:36,651 - __main__ - INFO - Dataset info: {'classes': ['Neural_Networks', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Theory', 'Case_Based', 'Reinforcement_Learning', 'Rule_Learning'], 'counts': [818, 426, 418, 351, 298, 217, 180], 'num_classes': 7}
+2025-07-03 13:44:36,674 - src.neo4j_manager - INFO - Successfully connected to Neo4j database
+2025-07-03 13:44:36,674 - __main__ - INFO - Running classical community detection algorithms...
+2025-07-03 13:44:36,674 - __main__ - INFO - Loading data into Neo4j...
+2025-07-03 13:44:36,682 - src.neo4j_manager - INFO - Database cleared
+2025-07-03 13:44:40,419 - src.neo4j_manager - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 13:44:40,420 - __main__ - INFO - Running Louvain algorithm...
+2025-07-03 13:44:40,424 - src.neo4j_manager - INFO - Dropped existing cora-graph projection
+2025-07-03 13:44:42,581 - src.neo4j_manager - INFO - Louvain algorithm completed: <Record communityCount=102 modularities=[0.5304574116592969, 0.7682649793423305, 0.8175300088644106, 0.8190472931757136]>
+2025-07-03 13:44:42,581 - __main__ - INFO - Running Label Propagation algorithm...
+2025-07-03 13:44:42,605 - src.neo4j_manager - INFO - Label Propagation completed: <Record communityCount=224 ranIterations=8>
+2025-07-03 13:44:42,605 - __main__ - INFO - Classical algorithms completed
+2025-07-03 13:44:42,710 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
+2025-07-03 13:44:42,710 - __main__ - INFO - Preparing PyTorch data...
+2025-07-03 13:44:42,710 - src.data_loader - INFO - Cora dataset already exists
+2025-07-03 13:44:42,770 - src.data_loader - INFO - Loaded 2708 papers and 5429 citations
+2025-07-03 13:44:42,814 - src.data_loader - INFO - PyTorch data: 2708 nodes, 1433 features, 5429 edges, 7 classes
+2025-07-03 13:44:42,848 - __main__ - INFO - PyTorch data prepared: Data(x=[2708, 1433], edge_index=[2, 5429], y=[2708], paper_ids=[2708], louvain_communities=[2708], lpa_communities=[2708])
+2025-07-03 13:44:42,848 - __main__ - INFO - Running GNN experiments...
+2025-07-03 13:44:42,848 - __main__ - INFO - Using device: cpu
+2025-07-03 13:44:42,849 - __main__ - INFO - Number of communities - Louvain: 102, LPA: 224, True classes: 7
+2025-07-03 13:44:42,849 - __main__ - INFO - Training GCN model...
+2025-07-03 13:44:42,889 - src.gnn_models - INFO - Epoch 000, Loss: 1.3431
+2025-07-03 13:44:43,347 - src.gnn_models - INFO - Epoch 050, Loss: 1.2634
+2025-07-03 13:44:43,804 - src.gnn_models - INFO - Epoch 100, Loss: 1.2524
+2025-07-03 13:44:44,261 - src.gnn_models - INFO - Epoch 150, Loss: 1.2454
+2025-07-03 13:44:44,783 - __main__ - INFO - GCN unsupervised training completed
+2025-07-03 13:44:44,799 - src.gnn_models - INFO - Epoch 000, Loss: 2.0881, Val Acc: 0.4034
+2025-07-03 13:44:44,894 - src.gnn_models - INFO - Epoch 010, Loss: 0.6168, Val Acc: 0.8069
+2025-07-03 13:44:44,991 - src.gnn_models - INFO - Epoch 020, Loss: 0.2855, Val Acc: 0.8327
+2025-07-03 13:44:45,066 - src.gnn_models - INFO - Epoch 030, Loss: 0.1727, Val Acc: 0.8155
+2025-07-03 13:44:45,140 - src.gnn_models - INFO - Epoch 040, Loss: 0.1433, Val Acc: 0.8130
+2025-07-03 13:44:45,214 - src.gnn_models - INFO - Epoch 050, Loss: 0.1129, Val Acc: 0.8106
+2025-07-03 13:44:45,288 - src.gnn_models - INFO - Epoch 060, Loss: 0.1033, Val Acc: 0.8044
+2025-07-03 13:44:45,361 - src.gnn_models - INFO - Epoch 070, Loss: 0.0773, Val Acc: 0.8081
+2025-07-03 13:44:45,431 - src.gnn_models - INFO - Epoch 080, Loss: 0.0800, Val Acc: 0.7995
+2025-07-03 13:44:45,504 - src.gnn_models - INFO - Epoch 090, Loss: 0.0573, Val Acc: 0.8020
+2025-07-03 13:44:45,577 - src.gnn_models - INFO - Epoch 100, Loss: 0.0580, Val Acc: 0.8069
+2025-07-03 13:44:45,648 - src.gnn_models - INFO - Epoch 110, Loss: 0.0576, Val Acc: 0.8007
+2025-07-03 13:44:45,723 - src.gnn_models - INFO - Epoch 120, Loss: 0.0463, Val Acc: 0.7983
+2025-07-03 13:44:45,796 - src.gnn_models - INFO - Epoch 130, Loss: 0.0467, Val Acc: 0.7897
+2025-07-03 13:44:45,867 - src.gnn_models - INFO - Epoch 140, Loss: 0.0455, Val Acc: 0.7897
+2025-07-03 13:44:45,941 - src.gnn_models - INFO - Epoch 150, Loss: 0.0472, Val Acc: 0.7946
+2025-07-03 13:44:46,015 - src.gnn_models - INFO - Epoch 160, Loss: 0.0401, Val Acc: 0.7884
+2025-07-03 13:44:46,091 - src.gnn_models - INFO - Epoch 170, Loss: 0.0420, Val Acc: 0.7909
+2025-07-03 13:44:46,166 - src.gnn_models - INFO - Epoch 180, Loss: 0.0287, Val Acc: 0.7909
+2025-07-03 13:44:46,242 - src.gnn_models - INFO - Epoch 190, Loss: 0.0393, Val Acc: 0.7860
+2025-07-03 13:44:46,309 - __main__ - INFO - GCN semi-supervised training completed
+2025-07-03 13:44:46,310 - __main__ - INFO - Training SAGE model...
+2025-07-03 13:44:46,342 - src.gnn_models - INFO - Epoch 000, Loss: 1.3943
+2025-07-03 13:44:46,969 - src.gnn_models - INFO - Epoch 050, Loss: 1.2669
+2025-07-03 13:44:47,594 - src.gnn_models - INFO - Epoch 100, Loss: 1.2521
+2025-07-03 13:44:48,223 - src.gnn_models - INFO - Epoch 150, Loss: 1.2425
+2025-07-03 13:44:48,879 - __main__ - INFO - SAGE unsupervised training completed
+2025-07-03 13:44:48,902 - src.gnn_models - INFO - Epoch 000, Loss: 2.1031, Val Acc: 0.2497
+2025-07-03 13:44:49,043 - src.gnn_models - INFO - Epoch 010, Loss: 0.5567, Val Acc: 0.7847
+2025-07-03 13:44:49,162 - src.gnn_models - INFO - Epoch 020, Loss: 0.1727, Val Acc: 0.8032
+2025-07-03 13:44:49,273 - src.gnn_models - INFO - Epoch 030, Loss: 0.0696, Val Acc: 0.7946
+2025-07-03 13:44:49,381 - src.gnn_models - INFO - Epoch 040, Loss: 0.0477, Val Acc: 0.7946
+2025-07-03 13:44:49,488 - src.gnn_models - INFO - Epoch 050, Loss: 0.0370, Val Acc: 0.7934
+2025-07-03 13:44:49,594 - src.gnn_models - INFO - Epoch 060, Loss: 0.0275, Val Acc: 0.7872
+2025-07-03 13:44:49,702 - src.gnn_models - INFO - Epoch 070, Loss: 0.0283, Val Acc: 0.7970
+2025-07-03 13:44:49,812 - src.gnn_models - INFO - Epoch 080, Loss: 0.0153, Val Acc: 0.7958
+2025-07-03 13:44:49,926 - src.gnn_models - INFO - Epoch 090, Loss: 0.0194, Val Acc: 0.7934
+2025-07-03 13:44:50,038 - src.gnn_models - INFO - Epoch 100, Loss: 0.0172, Val Acc: 0.8020
+2025-07-03 13:44:50,147 - src.gnn_models - INFO - Epoch 110, Loss: 0.0165, Val Acc: 0.7995
+2025-07-03 13:44:50,260 - src.gnn_models - INFO - Epoch 120, Loss: 0.0164, Val Acc: 0.7884
+2025-07-03 13:44:50,371 - src.gnn_models - INFO - Epoch 130, Loss: 0.0128, Val Acc: 0.7884
+2025-07-03 13:44:50,483 - src.gnn_models - INFO - Epoch 140, Loss: 0.0099, Val Acc: 0.7958
+2025-07-03 13:44:50,596 - src.gnn_models - INFO - Epoch 150, Loss: 0.0177, Val Acc: 0.7970
+2025-07-03 13:44:50,707 - src.gnn_models - INFO - Epoch 160, Loss: 0.0194, Val Acc: 0.7860
+2025-07-03 13:44:50,817 - src.gnn_models - INFO - Epoch 170, Loss: 0.0114, Val Acc: 0.7934
+2025-07-03 13:44:50,928 - src.gnn_models - INFO - Epoch 180, Loss: 0.0134, Val Acc: 0.7958
+2025-07-03 13:44:51,040 - src.gnn_models - INFO - Epoch 190, Loss: 0.0123, Val Acc: 0.7958
+2025-07-03 13:44:51,142 - __main__ - INFO - SAGE semi-supervised training completed
+2025-07-03 13:44:51,142 - __main__ - INFO - Training GAT model...
+2025-07-03 13:44:51,176 - src.gnn_models - INFO - Epoch 000, Loss: 1.3451
+2025-07-03 13:44:51,786 - src.gnn_models - INFO - Epoch 050, Loss: 1.2578
+2025-07-03 13:44:52,392 - src.gnn_models - INFO - Epoch 100, Loss: 1.2434
+2025-07-03 13:44:52,983 - src.gnn_models - INFO - Epoch 150, Loss: 1.2403
+2025-07-03 13:44:53,594 - __main__ - INFO - GAT unsupervised training completed
+2025-07-03 13:44:53,613 - src.gnn_models - INFO - Epoch 000, Loss: 2.0733, Val Acc: 0.3653
+2025-07-03 13:44:53,739 - src.gnn_models - INFO - Epoch 010, Loss: 0.6671, Val Acc: 0.8229
+2025-07-03 13:44:53,851 - src.gnn_models - INFO - Epoch 020, Loss: 0.2639, Val Acc: 0.8462
+2025-07-03 13:44:53,954 - src.gnn_models - INFO - Epoch 030, Loss: 0.1442, Val Acc: 0.8339
+2025-07-03 13:44:54,056 - src.gnn_models - INFO - Epoch 040, Loss: 0.1095, Val Acc: 0.8278
+2025-07-03 13:44:54,157 - src.gnn_models - INFO - Epoch 050, Loss: 0.0789, Val Acc: 0.8241
+2025-07-03 13:44:54,259 - src.gnn_models - INFO - Epoch 060, Loss: 0.0639, Val Acc: 0.8180
+2025-07-03 13:44:54,364 - src.gnn_models - INFO - Epoch 070, Loss: 0.0587, Val Acc: 0.8192
+2025-07-03 13:44:54,470 - src.gnn_models - INFO - Epoch 080, Loss: 0.0347, Val Acc: 0.8192
+2025-07-03 13:44:54,574 - src.gnn_models - INFO - Epoch 090, Loss: 0.0343, Val Acc: 0.8155
+2025-07-03 13:44:54,678 - src.gnn_models - INFO - Epoch 100, Loss: 0.0421, Val Acc: 0.8106
+2025-07-03 13:44:54,780 - src.gnn_models - INFO - Epoch 110, Loss: 0.0351, Val Acc: 0.8044
+2025-07-03 13:44:54,883 - src.gnn_models - INFO - Epoch 120, Loss: 0.0336, Val Acc: 0.8044
+2025-07-03 13:44:54,984 - src.gnn_models - INFO - Epoch 130, Loss: 0.0327, Val Acc: 0.8081
+2025-07-03 13:44:55,089 - src.gnn_models - INFO - Epoch 140, Loss: 0.0291, Val Acc: 0.8093
+2025-07-03 13:44:55,193 - src.gnn_models - INFO - Epoch 150, Loss: 0.0221, Val Acc: 0.8093
+2025-07-03 13:44:55,295 - src.gnn_models - INFO - Epoch 160, Loss: 0.0163, Val Acc: 0.8106
+2025-07-03 13:44:55,402 - src.gnn_models - INFO - Epoch 170, Loss: 0.0170, Val Acc: 0.8118
+2025-07-03 13:44:55,503 - src.gnn_models - INFO - Epoch 180, Loss: 0.0122, Val Acc: 0.8057
+2025-07-03 13:44:55,605 - src.gnn_models - INFO - Epoch 190, Loss: 0.0156, Val Acc: 0.8069
+2025-07-03 13:44:55,695 - __main__ - INFO - GAT semi-supervised training completed
+2025-07-03 13:44:55,696 - __main__ - INFO - Evaluating results...
+2025-07-03 13:44:56,669 - src.neo4j_manager - INFO - Updated 2708 nodes with GNN predictions
+2025-07-03 13:44:56,675 - __main__ - INFO - Best GNN method (gat_semi_supervised) results written to Neo4j
+2025-07-03 13:44:56,675 - __main__ - INFO - Creating visualizations...
+2025-07-03 13:47:46,517 - src.neo4j_manager - INFO - Retrieved 2708 nodes and 5429 edges
+2025-07-03 13:47:46,551 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
+2025-07-03 13:48:21,892 - src.visualization - INFO - Sampling 1000 edges from 5429 for visualization
+2025-07-03 13:48:39,740 - src.visualization - INFO - Results summary saved to /Users/emre/code/projects/ege-uni/community-detection-graph/results
+2025-07-03 13:48:39,745 - src.neo4j_manager - INFO - Graph projection cleaned up
+2025-07-03 13:48:39,749 - neo4j.notifications - WARNING - Received notification from DBMS server: {severity: WARNING} {code: Neo.ClientNotification.Statement.FeatureDeprecationWarning} {category: DEPRECATION} {title: This feature is deprecated and will be removed in future versions.} {description: The query used a deprecated field from a procedure. ('schema' returned by 'gds.graph.drop' is deprecated.)} {position: line: 1, column: 1, offset: 0} for query: "CALL gds.graph.drop('cora-graph')"
+2025-07-03 13:48:39,749 - src.neo4j_manager - INFO - Neo4j connection closed
+2025-07-03 13:48:39,749 - __main__ - INFO - === FINAL RESULTS ===
+2025-07-03 13:48:39,749 - __main__ - INFO - Louvain:
+2025-07-03 13:48:39,749 - __main__ - INFO -   ARI: 0.2375
+2025-07-03 13:48:39,750 - __main__ - INFO -   NMI: 0.4560
+2025-07-03 13:48:39,750 - __main__ - INFO -   Communities: 102
+2025-07-03 13:48:39,750 - __main__ - INFO - Label_Propagation:
+2025-07-03 13:48:39,750 - __main__ - INFO -   ARI: 0.1464
+2025-07-03 13:48:39,750 - __main__ - INFO -   NMI: 0.3830
+2025-07-03 13:48:39,750 - __main__ - INFO -   Communities: 224
+2025-07-03 13:48:39,750 - __main__ - INFO - gcn_unsupervised:
+2025-07-03 13:48:39,750 - __main__ - INFO -   ARI: 0.0761
+2025-07-03 13:48:39,750 - __main__ - INFO -   NMI: 0.3485
+2025-07-03 13:48:39,750 - __main__ - INFO -   Communities: 102
+2025-07-03 13:48:39,750 - __main__ - INFO - gcn_semi_supervised:
+2025-07-03 13:48:39,750 - __main__ - INFO -   ARI: 0.8584
+2025-07-03 13:48:39,750 - __main__ - INFO -   NMI: 0.8147
+2025-07-03 13:48:39,750 - __main__ - INFO -   Communities: 7
+2025-07-03 13:48:39,750 - __main__ - INFO - sage_unsupervised:
+2025-07-03 13:48:39,750 - __main__ - INFO -   ARI: 0.0711
+2025-07-03 13:48:39,750 - __main__ - INFO -   NMI: 0.3636
+2025-07-03 13:48:39,750 - __main__ - INFO -   Communities: 102
+2025-07-03 13:48:39,750 - __main__ - INFO - sage_semi_supervised:
+2025-07-03 13:48:39,750 - __main__ - INFO -   ARI: 0.8623
+2025-07-03 13:48:39,750 - __main__ - INFO -   NMI: 0.8244
+2025-07-03 13:48:39,750 - __main__ - INFO -   Communities: 7
+2025-07-03 13:48:39,750 - __main__ - INFO - gat_unsupervised:
+2025-07-03 13:48:39,750 - __main__ - INFO -   ARI: 0.0716
+2025-07-03 13:48:39,750 - __main__ - INFO -   NMI: 0.3566
+2025-07-03 13:48:39,750 - __main__ - INFO -   Communities: 102
+2025-07-03 13:48:39,750 - __main__ - INFO - gat_semi_supervised:
+2025-07-03 13:48:39,750 - __main__ - INFO -   ARI: 0.8700
+2025-07-03 13:48:39,750 - __main__ - INFO -   NMI: 0.8331
+2025-07-03 13:48:39,750 - __main__ - INFO -   Communities: 7
+2025-07-03 13:48:39,750 - __main__ - INFO - Community Detection project completed successfully!
