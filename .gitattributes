@@ -1,0 +1,9 @@
+# Linguist overrides - mark HTML files as generated/vendored
+results/*.html linguist-generated=true
+*.html linguist-generated=true
+
+# Mark Jupyter notebooks as documentation
+*.ipynb linguist-documentation=true
+
+# Ensure Python files are detected
+*.py linguist-language=Python
